@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "CarnasW03-Black";
+  src: url("../assets/CarnasW03_Black.ttf");
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10pt;
+  font-weight: 100;
+}
+
+img {
+  user-select: none;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+}
+
+.nav {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav li {
+  color: white;
+  font-weight: bold;
+  list-style: none;
+  cursor: pointer;
+}
+
+.div_top {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/imgs/entrada.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.div_logo_h {
+  padding-top: 325px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.div_down_arrow {
+  width: 100%;
+  text-align: center;
+}
+
+.div_us {
+  width: 100%;
+}
