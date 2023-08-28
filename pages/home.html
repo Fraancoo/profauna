@@ -7,44 +7,227 @@
     <link rel="stylesheet" href="../styles/home.css" />
     <link rel="icon" href="../assets/imgs/logo.webp" />
     <script src="../js/home.js" defer></script>
-    <title>Profauna Centro de Especialidades Médicas Veterinarias</title>
+    <title>Profauna Hospital Veterinario en Tijuana</title>
   </head>
   <body>
     <header>
-      <ul class="nav">
-        <li>Inicio</li>
-        <li>Nosotros</li>
-        <li>Servicios</li>
-        <li>Profauna Adopt</li>
-        <li>Lost & Found</li>
-        <li>Profauna Shop</li>
-        <li>Contacto</li>
-        <li>
-          <div>Emergencias 24/7</div>
-        </li>
-      </ul>
+      <div class="div_nav">
+        <ul class="nav">
+          <li>Inicio</li>
+          <li>Nosotros</li>
+          <li>Servicios</li>
+          <li>Profauna Adopt</li>
+          <li>Lost & Found</li>
+          <li>Profauna Shop</li>
+          <li>Contacto</li>
+          <li>
+            <button id="btn_emergency">Emergencias 24/7</button>
+          </li>
+        </ul>
+      </div>
     </header>
-    <main>
-      <div class="container">
-        <div class="div_top">
-          <div class="div_logo_h">
+    <main id="container">
+      <div id="div_header">
+        <div class="div_logo_h">
+          <img src="../assets/svg/logo-horizontal-1.svg" alt="Profauna logo" />
+        </div>
+        <div class="div_down_arrow">
+          <img
+            id="down_arrow"
+            src="../assets/svg/FaChevronDown.svg"
+            alt="Flecha"
+          />
+        </div>
+      </div>
+      <div id="div_us">
+        <div class="div_perro">
+          <img
+            src="../assets/imgs/img-nosotroshome-left.png"
+            alt="Perro imagen"
+          />
+        </div>
+        <div>
+          <h2>
+            Sobre<br />
+            nosotros
+          </h2>
+        </div>
+        <div>
+          <p>
+            En Profauna ayudamos a las familias a vivir felices en armonía con
+            sus mascotas, atendiéndolas con el respeto, profesionalismo e
+            importancia que merecen.
+          </p>
+          <p>
+            Reconociendo y fomentando el respeto a la vida animal y su inclusión
+            a la familia. Nuestras acciones son guiadas por el compromiso a la
+            salud de nuestros pacientes y la pasión por mejorar su calidad de
+            vida.
+          </p>
+          <button>Más sobre nosotros</button>
+        </div>
+        <div>
+          <img
+            src="../assets/imgs/erick.png"
+            alt="Médico Veterinario Zootécnico"
+          />
+        </div>
+      </div>
+      <div id="div_services">
+        <div class="services_cont">
+          <h2>Servicos</h2>
+          <p>
+            Como Hospital Veterinario, nuestros servicios y atención médica
+            buscan promover entre nuestros colaboradores y clientes el respeto a
+            la vida animal y el compromiso con la salud de nuestros pacientes.
+          </p>
+          <button>Conoce todos nuestros servicios</button>
+        </div>
+      </div>
+      <div id="div_adopt">
+        <div class="adopt_cont">
+          <div>
             <img
-              src="../assets/svg/logo-horizontal-1.svg"
-              alt="Profauna logo"
+              src="../assets/imgs/adopt-img.png"
+              alt="Médico Veterinario Zootécnico"
             />
           </div>
-          <div class="div_down_arrow">
-            <img src="../assets/svg/BsChevronDown.svg" alt="Flecha" />
+          <div>
+            <img
+              src="../assets/svg/logo-profaunaadopt.svg"
+              alt="Profauna Adopt"
+            />
+            <h2>Tu nuevo mejor amigo podría estar aquí</h2>
+            <button>Conócelo</button>
+          </div>
+          <div>
+            <img src="../assets/imgs/pancho.png" alt="Pancho" />
           </div>
         </div>
       </div>
-      <div class="div_us">
-        <img
-          src="../assets/imgs/img-nosotroshome-left.png"
-          alt="Perro imagen"
-        />
+      <div>
+        <h2>¡Me perdí!</h2>
+        <p>Ayúdame a volver a casa</p>
+        <button>¿Me ayudas?</button>
+      </div>
+      <div>
+        <div>
+          <img src="../assets/imgs/img-aurashop.png" alt="Rana" />
+        </div>
+        <div>
+          <img src="../assets/svg/logo-profaunaadopt.svg" alt="Profauna Shop" />
+          <h2>Visítanos para encontrar todo tipo de juguetes o alimento</h2>
+          <p>
+            Estamos dentro de Profauna y próximamente online. Suscríbete para
+            conocer la fecha de lanzamiento y promociones exclusivas.
+          </p>
+          <form>
+            <h3>Tu correo electrónico</h3>
+            <label>
+              <input type="email" />
+              <button>Suscribirme</button>
+            </label>
+          </form>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div>
+            <img src="../assets/imgs/placa.jpg" alt="Legolas" />
+            <div>
+              <img
+                src="../assets/svg/logo-profaunafamily.svg"
+                alt="Profauna Family"
+              />
+              <h2>¿Ya formas parte de Profauna Family?</h2>
+              <p>
+                Registra tus datos y los de tu mascota, así podremos atenderte
+                con mayor rapidez y te mantendremos informado sobre noticias y
+                promociones PROFAUNA
+              </p>
+              <button>Regístrate</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="../assets/imgs/tortugas.jpg" alt="Tortugas" />
+        </div>
+        <div>
+          <div>
+            <img src="../assets/imgs/loros.jpg" alt="Pericos" />
+          </div>
+          <div>
+            <h2>¡Visítanos!</h2>
+            <div>
+              <div>
+                <h3>Horarios de atención</h3>
+                <div>
+                  <h4>Normal:</h4>
+                  <p>Lunes – Viernes 9:00 am a 8:00 pm</p>
+                  <p>Sábado y Domingo 9:00 am a 6:00 pm</p>
+                </div>
+                <div>
+                  <h4>Nocturno:</h4>
+                  <p>Lunes – Viernes 8:01 pm a 8:59 am</p>
+                  <p>Sábado y Domingo 6:01 pm a 8:59 am</p>
+                </div>
+              </div>
+              <div>
+                <h3>Nos encontramos en:</h3>
+                <p>
+                  Blvd. Fundadores #3008 Col. Juárez, Tijuana, Baja California
+                </p>
+                <div>
+                  <div>
+                    <img src="" alt="Teléfono" />
+                    <span>664 200 24 51 – 664 200 24 61</span>
+                  </div>
+                  <div>
+                    <img src="../assets/svg/icon-fb.svg" alt="Facebook" />
+                    <span>PROFAUNAMX</span>
+                  </div>
+                  <div>
+                    <img src="../assets/svg/icon-ig.svg" alt="Instagram" />
+                    <span>PROFAUNAMEX</span>
+                  </div>
+                  <div>
+                    <img src="../assets/svg/icon-tiktok.svg" alt="Tiktok" />
+                    <span>PROFAUNAMX</span>
+                  </div>
+                  <div>
+                    <img src="../assets/svg/icon-whats.svg" alt="WhatsApp" />
+                    <span>Profauna</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div>
+        <div>
+          <ul>
+            <li>Políticas de privacidad</li>
+            <li>Nosotros</li>
+            <li>Bolsa de trabajo</li>
+          </ul>
+        </div>
+        <div>
+          <img src="../assets/svg/logo-blanco-clean.svg" alt="Profauna" />
+          <img src="../assets/svg/icon-fb-white.svg" alt="Facebook" />
+          <img src="../assets/svg/icon-ig-white.svg" alt="Instagram" />
+          <img src="../assets/svg/icon-tiktok-white.svg" alt="Tiktok" />
+          <img src="../assets/svg/icon-whats-white.svg" alt="WhatsApp" />
+        </div>
+      </div>
+      <div>
+        <p>
+          © Profauna Centro de Especialidades Médicas Veterinarias. Todos los
+          derechos reservados.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
