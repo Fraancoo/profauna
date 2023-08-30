@@ -1,0 +1,93 @@
+:root {
+  --blue: #426c82;
+  --green: #52bfb9;
+  --breen: #4daec9;
+  --yellow: #ffa61a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  font-size: 10pt;
+  font-weight: 100;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+button {
+  padding: 15px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 300ms;
+}
+
+#sect_header {
+  height: 100vh;
+  text-align: center;
+  background-image: url("../assets/imgs/bg_firstfold.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#sect_header > .div_logo {
+  padding: 30% 0 50px;
+}
+
+#down_arrow {
+  height: 50px;
+  animation: anim_arrow 2s infinite linear;
+  cursor: pointer;
+}
+
+#sect_us {
+  display: flex;
+  width: 100%;
+  background-image: url("../assets/imgs/img-nosotroshome-right.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+#sect_us > .div_dog {
+}
+
+#sect_us > .cont {
+  width: 50%;
+}
+
+@keyframes anim_arrow {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-75%);
+  }
+  30% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-25%);
+  }
+}
