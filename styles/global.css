@@ -28,7 +28,6 @@ body {
 }
 
 h2 {
-  letter-spacing: 0.1rem;
   word-spacing: 0.2rem;
   font-weight: 800;
 }
@@ -61,6 +60,10 @@ header {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+input[type="email"] {
+  border: none;
 }
 
 .img_fixed {

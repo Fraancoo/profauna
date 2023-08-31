@@ -1,0 +1,95 @@
+#sect_warning {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../assets/imgs/bg_shop_construccion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+#sect_warning > div {
+  max-width: 550px;
+  padding: 25px;
+}
+
+#sect_warning .div_top p {
+  margin: 30px 0;
+  color: var(--blue);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#sect_warning .div_form {
+  margin-bottom: 30px;
+}
+
+#sect_warning .div_form p {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#sect_warning .div_form .title {
+  color: var(--indigo);
+  margin-bottom: 10px;
+}
+
+#sect_warning .div_form label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#sect_warning .div_form input {
+  padding: 7px;
+  font-size: 1.5rem;
+}
+
+#sect_warning .div_form button {
+  padding: 7px 15px;
+  background-color: var(--yellow);
+}
+
+#sect_warning .div_form button:hover {
+  background-color: var(--breen);
+}
+
+#sect_warning .div_form .desc {
+  margin: 20px 0;
+  color: var(--blue);
+}
+
+#sect_warning .div_form .desc span {
+  color: var(--yellow);
+  cursor: pointer;
+  transition: 300ms;
+}
+
+#sect_warning .div_form .desc span:hover {
+  color: var(--breen);
+}
+
+#sect_warning .div_form .desc span:hover {
+  color: var(--breen);
+}
+
+#sect_warning .div_visit .title {
+  color: var(--breen);
+  font-size: 3.3rem;
+  font-weight: 900;
+}
+
+#sect_warning .div_visit .address {
+  margin-top: 10px;
+  color: var(--indigo);
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+#sect_warning .div_visit .address span:first-of-type {
+  font-size: 1.75rem;
+}
+
+#sect_warning .div_visit .address span:last-of-type {
+  font-size: 1.3rem;
+}

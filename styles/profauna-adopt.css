@@ -1,0 +1,93 @@
+#sect_top {
+  height: 500px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  background-image: url("../assets/imgs/top_adopt.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 50% 50% / 0 0 100px 100px;
+}
+
+#sect_info {
+  padding: 25px;
+  display: flex;
+  gap: 30px;
+}
+
+#sect_info .cont {
+  font-weight: 900;
+}
+
+#sect_info .cont .requi h1 {
+  margin-top: 20px;
+}
+
+#sect_info .cont h1 {
+  color: var(--yellow);
+  font-size: 2rem;
+}
+
+#sect_info .cont li {
+  margin-top: 15px;
+  color: var(--blue);
+  font-size: 1.3rem;
+  list-style-position: inside;
+}
+
+#sect_adopt {
+  margin-top: 30px;
+  color: var(--indigo);
+}
+
+#sect_adopt h1,
+#sect_adopt h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#sect_adopt .div_animals {
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+#sect_adopt .div_animals .div_animal {
+  text-align: center;
+}
+
+#sect_adopt .div_animals .div_animal img {
+  height: 250px;
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px #999999;
+  cursor: pointer;
+}
+
+#sect_adopt .div_animals .div_animal h3 {
+  margin: 15px 0;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+#sect_adopt .div_animals .div_animal h3:hover {
+  color: var(--yellow);
+}
+
+#sect_adopt .div_animals .div_animal button {
+  background-color: var(--yellow);
+}
+
+#sect_adopt .div_animals .div_animal button:hover {
+  background-color: var(--breen);
+}
+
+.div_bottom {
+  height: 300px;
+  background-image: url("../assets/imgs/img-adopt-bottom.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}

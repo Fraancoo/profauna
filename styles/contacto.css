@@ -1,0 +1,80 @@
+#sect_top {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  padding: 50px 30px 0 30px;
+  background-image: url("../assets/imgs/top_contacto.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border-radius: 0 0 50% 50% / 0 0 100px 100px;
+}
+
+#sect_top > .div_title {
+  color: #fff;
+  font-size: 2rem;
+}
+
+#sect_top > .div_title img {
+  width: 450px;
+  margin-bottom: 30px;
+}
+
+#sect_map {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#sect_map > section {
+  max-width: 350px;
+}
+
+#sect_map > .schedule > h1,
+#sect_map > .contact > h1 {
+  color: var(--blue);
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+
+#sect_map > .schedule > h2,
+#sect_map > .contact > p {
+  color: var(--yellow);
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+#sect_map > .schedule > h2:last-of-type {
+  margin-top: 10px;
+}
+
+#sect_map > .schedule > p {
+  color: var(--blue);
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+#sect_map > .contact > .media {
+  margin-top: 20px;
+}
+
+#sect_map > .contact > .media > div {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#sect_map > .contact > .media span {
+  color: var(--blue);
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.div_bottom {
+  background-image: url("../assets/imgs/bg_contacto_bottom.jpg");
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+}
