@@ -1,0 +1,186 @@
+#sect_top {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  background-image: url("../assets/imgs/top_servicios.jpg");
+  background-size: cover;
+  border-radius: 0 0 50% 50% / 0 0 100px 100px;
+}
+
+#sect_top > div {
+  padding-left: 20px;
+}
+
+#sect_top .div_img > img {
+  width: 450px;
+  margin-bottom: 25px;
+}
+
+#sect_top .cont {
+  width: 600px;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#sect_data {
+  padding: 15px;
+}
+
+#sect_data > h1 {
+  color: var(--indigo);
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+#sect_data > div {
+  display: flex;
+}
+
+#sect_data .div_table {
+  display: flex;
+  z-index: 2;
+}
+
+#sect_data .div_opts ul {
+  list-style: none;
+}
+
+#sect_data .div_opts ul li {
+  padding: 25px 15px;
+  color: var(--indigo);
+  font-size: 1.5rem;
+  background-color: var(--light-blue);
+  transition: 300ms;
+  cursor: pointer;
+}
+
+#sect_data .div_opts ul li:hover {
+  color: #fff;
+  background-color: var(--indigo);
+}
+
+#sect_data .div_img > img {
+  height: 600px;
+  position: absolute;
+  right: 0;
+  transform: translateY(-10%);
+}
+
+#sect_data .div_info {
+  width: 600px;
+  background-color: #f0f0f0;
+}
+
+#sect_beauty {
+  padding: 15px;
+  /* display: flex;
+  gap: 30px; */
+}
+
+#sect_beauty > .div_carrusel {
+  width: fit-content;
+  height: 400px;
+  display: flex;
+  overflow: hidden;
+}
+
+#sect_beauty > .div_carrusel div {
+  display: flex;
+  width: 500px;
+  transition: transform 300ms ease;
+}
+
+#sect_beauty > .div_carrusel img {
+  height: 100%;
+  width: 500px;
+}
+
+#sect_beauty > .cont {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#sect_beauty > .cont > p {
+  color: var(--blue);
+  margin: 20px 0;
+}
+
+#sect_beauty > .cont li {
+  margin-top: 10px;
+  color: var(--yellow);
+}
+
+#sect_beauty > .cont span {
+  color: var(--blue);
+}
+
+#sect_lab {
+  padding: 75px 25px;
+  display: flex;
+  gap: 30px;
+  background-image: url("../assets/imgs/bg_profaunalab-1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#sect_lab > .div_desc {
+  color: #fff;
+  width: 30%;
+}
+
+#sect_lab > .div_desc p {
+  margin-top: 25px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#sect_lab > .div_list {
+  display: flex;
+  gap: 30px;
+}
+
+#sect_lab > .div_list li {
+  margin: 15px 0;
+  color: var(--yellow);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#sect_lab > .div_list span {
+  color: #fff;
+}
+
+#sect_contact {
+  background-color: var(--green);
+  background-image: url("../assets/imgs/bg_simbolo_verde.png");
+  background-position: 0 40%;
+  background-repeat: no-repeat;
+}
+
+#sect_contact > .cont {
+  color: #fff;
+  text-align: center;
+}
+
+#sect_contact > .cont h1 {
+  padding: 75px 0 20px;
+  font-size: 2rem;
+}
+
+#sect_contact > .cont button {
+  background-color: var(--yellow);
+}
+
+#sect_contact > .cont button:hover {
+  background-color: var(--breen);
+}
+
+#sect_contact > .div_img img {
+  transform: translateY(3px);
+}
+
+#sect_contact > .div_img {
+  overflow-x: hidden;
+}

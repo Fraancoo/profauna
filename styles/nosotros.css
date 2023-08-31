@@ -1,0 +1,121 @@
+#sect_profauna {
+  height: 500px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  background-image: url("../assets/imgs/top_nosotros.jpg");
+  border-radius: 0 0 50% 50% / 0 0 100px 100px;
+}
+
+#sect_profauna > .div_img {
+  height: 200px;
+  padding-right: 50px;
+  border-right: 2px solid #fff;
+  display: flex;
+  align-items: center;
+}
+
+#sect_profauna > .div_img > img {
+  width: 450px;
+}
+
+#sect_profauna > .cont {
+  padding-left: 30px;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#sect_profauna > .cont span {
+  color: var(--yellow);
+}
+
+#sect_team {
+  padding: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+#sect_team > .cont {
+  color: var(--blue);
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#sect_team > .div_img > img {
+  height: 375px;
+}
+
+.div_block {
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: var(--yellow);
+}
+
+#sect_mvv {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#sect_mvv > div {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+#sect_mvv > div > div {
+  text-align: center;
+}
+
+#sect_mvv > div > div > h1 {
+  font-size: 3.3rem;
+  margin-bottom: 20px;
+}
+
+#sect_mvv > div > div > p {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.div_mision {
+  width: 100%;
+  background-image: url("../assets/imgs/bg_mision.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: right;
+}
+
+.div_mision > div {
+  width: 50%;
+}
+
+.div_vision,
+.div_valores {
+  width: 50%;
+}
+
+.div_vision > div,
+.div_valores > div {
+  padding: 15px;
+}
+
+.div_vision {
+  background-image: url("../assets/imgs/bg_vision.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.div_valores {
+  background-image: url("../assets/imgs/bg_valores.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

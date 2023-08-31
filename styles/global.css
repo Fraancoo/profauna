@@ -1,0 +1,177 @@
+:root {
+  --indigo: #16609c;
+  --light-blue: #c3dfe9;
+  --blue: #426c82;
+  --green: #52bfb9;
+  --breen: #4daec9;
+  --yellow: #ffa61a;
+}
+
+@font-face {
+  font-family: "CarnasW03-Black";
+  src: url("../assets/CarnasW03_Black.ttf");
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  font-size: 10pt;
+  font-weight: 100;
+}
+
+h2 {
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
+  font-weight: 800;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+button {
+  padding: 15px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 300ms;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent);
+  z-index: 9;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.img_fixed {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  margin-top: 25px;
+  width: calc(100% - 100px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav li,
+#btn_emergency {
+  font-size: 1.3rem;
+  font-weight: 800;
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav li {
+  margin: 10px 0 25px 0;
+}
+
+.nav li a {
+  transition: 300ms;
+}
+
+.nav li a:hover,
+#btn_emergency:hover {
+  color: var(--green);
+}
+
+#btn_emergency {
+  background-color: #bf0000;
+}
+
+.selected {
+  color: var(--green);
+}
+
+.noselected {
+  color: white;
+}
+
+footer {
+  background-color: #0a72a5;
+  font-weight: bold;
+}
+
+.ft_top {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ft_top ul {
+  display: flex;
+  cursor: pointer;
+  gap: 20px;
+}
+
+.ft_top li {
+  color: #fff;
+  font-size: 1.3rem;
+  list-style: none;
+  border-bottom: 2px solid transparent;
+  transition: 100ms;
+}
+
+.ft_top li:hover {
+  border-bottom: 2px solid var(--breen);
+}
+
+.ft_top img {
+  height: 35px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: 100ms;
+}
+
+.ft_top img:hover {
+  border-bottom: 2px solid var(--breen);
+}
+
+.div_media {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.ft_btm {
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+@media (max-width: 901px) {
+  nav {
+    display: none;
+  }
+}

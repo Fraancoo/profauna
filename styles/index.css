@@ -1,52 +1,21 @@
-:root {
-  --blue: #426c82;
-  --green: #52bfb9;
-  --breen: #4daec9;
-  --yellow: #ffa61a;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  font-family: "Montserrat", sans-serif;
-}
-
-html,
-body {
-  font-size: 10pt;
-  font-weight: 100;
-}
-
-img {
-  user-select: none;
-  -webkit-user-drag: none;
-}
-
-button {
-  padding: 15px;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 15px;
-  border: none;
-  cursor: pointer;
-  white-space: nowrap;
-  transition: 300ms;
-}
-
-#sect_header {
+#sect_top {
+  width: 100%;
   height: 100vh;
-  text-align: center;
+  background-color: #aa9b39;
   background-image: url("../assets/imgs/bg_firstfold.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
-#sect_header > .div_logo {
-  padding: 30% 0 50px;
+.div_logo_h {
+  padding-top: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.div_down_arrow {
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
 }
 
 #down_arrow {
@@ -56,19 +25,352 @@ button {
 }
 
 #sect_us {
-  display: flex;
+  height: 450px;
   width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
   background-image: url("../assets/imgs/img-nosotroshome-right.png");
+  background-position: 110%;
   background-repeat: no-repeat;
-  background-position: right;
   background-size: contain;
 }
 
-#sect_us > .div_dog {
+.div_perro {
+  width: 18%;
 }
 
-#sect_us > .cont {
+.div_perro img {
+  height: 425px;
+}
+
+.div_about {
+  width: 55%;
+  padding-left: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.div_about h2 {
+  color: var(--blue);
+  font-size: 2.7rem;
+}
+
+.div_about h2:last-of-type {
+  color: var(--breen);
+}
+
+.div_about p {
+  color: var(--blue);
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+.div_about button {
+  margin-top: 25px;
+  background-color: var(--yellow);
+}
+
+.div_about button:hover {
+  background-color: var(--breen);
+}
+
+#sect_services {
+  text-align: center;
+  padding: 100px 0 50px;
+  background-color: #1b53ac;
+  background-image: url("../assets/imgs/bg_servicioshome.jpg");
+}
+
+#sect_services {
+  display: flex;
+  justify-content: center;
+}
+
+.services_cont {
   width: 50%;
+}
+
+.services_cont > h2 {
+  color: #fff;
+  font-size: 3.5rem;
+  margin-bottom: 25px;
+}
+
+.services_cont > h2 {
+  color: #fff;
+  font-size: 3.5rem;
+}
+
+.services_cont > p {
+  color: #fff;
+  font-size: 1.3rem;
+  margin: 30px 0;
+}
+
+.services_cont > button {
+  margin: 30px 0;
+  background-color: var(--yellow);
+}
+
+.services_cont > button:hover {
+  background-color: var(--breen);
+}
+
+#sect_adopt {
+  display: block;
+  overflow-x: hidden;
+  background-color: var(--green);
+  background-image: url("../assets/imgs/bg_simbolo_verde.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.adopt_cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.adopt_cont > div:nth-child(2) {
+  z-index: 3;
+}
+
+.adopt_cont > div {
+  text-align: center;
+}
+
+.adopt_cont > div > h2 {
+  color: #fff;
+  margin: 20px 0 30px;
+}
+
+.adopt_cont > div > button {
+  background-color: var(--yellow);
+}
+
+.adopt_cont > div > button:hover {
+  background-color: var(--breen);
+}
+
+#sect_lost {
+  height: 500px;
+  background-color: #282828;
+  background-image: url("../assets/imgs/bg_lostfoundhome.jpg");
+  display: flex;
+  align-items: center;
+}
+
+#sect_lost div {
+  margin-left: 100px;
+  color: #fff;
+}
+
+#sect_lost h2 {
+  font-size: 4rem;
+}
+
+#sect_lost p {
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+#sect_lost button {
+  background-color: var(--yellow);
+}
+
+#sect_lost button:hover {
+  background-color: var(--breen);
+}
+
+#sect_shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-image: url("../assets/imgs/bg_shophome.jpg");
+}
+
+.aura {
+  transform: translateY(-50%);
+  position: absolute;
+  left: 0;
+}
+
+.div_shop_cont {
+  width: 700px;
+  color: #fff;
+  text-align: center;
+  z-index: 3;
+}
+
+.div_shop_cont h2 {
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+.div_shop_cont p {
+  margin: 20px 0;
+  font-size: 1.3rem;
+}
+
+.form_sus h3 {
+  margin-bottom: 15px;
+}
+
+.form_sus button {
+  padding: 8px 20px;
+  background-color: var(--yellow);
+  border-radius: 5px;
+}
+
+.form_sus button:hover {
+  background-color: var(--breen);
+}
+
+.form_sus input {
+  padding: 5px;
+  font-size: 1.5rem;
+}
+
+#sect_family {
+  display: flex;
+}
+
+#sect_family > div {
+  max-width: calc(50% - 50px);
+  margin-top: 75px;
+  text-align: end;
+}
+
+#sect_family > div:first-of-type > img {
+  width: 100%;
+}
+
+#sect_family > div:last-of-type img {
+  width: 100%;
+}
+
+#sect_family .title {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: var(--blue);
+}
+
+#sect_family .title span {
+  color: var(--breen);
+}
+
+#sect_family .body {
+  margin: 15px 0;
+  color: var(--blue);
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+#sect_family button {
+  background-color: var(--yellow);
+}
+
+#sect_family button:hover {
+  background-color: var(--breen);
+}
+
+#sect_tortugas {
+  position: absolute;
+  right: 0;
+}
+
+#sect_visit {
+  margin-top: 180px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+#sect_visit img {
+  transform: translateY(4px);
+}
+
+#sect_visit > div:first-of-type {
+  width: 40%;
+}
+
+#sect_visit > div:first-of-type img {
+  width: 100%;
+}
+
+#sect_visit > div:last-of-type {
+  z-index: 3;
+}
+
+.visit_cont h2 {
+  color: var(--breen);
+  font-size: 4rem;
+  margin-bottom: 40px;
+}
+
+.visit_cont > div {
+  max-width: 600px;
+  display: flex;
+  gap: 25px;
+  line-height: 2rem;
+}
+
+.visit_cont h3 {
+  color: var(--blue);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.visit_cont h4,
+.visit_cont p,
+.visit_cont > div > div:last-of-type p,
+.visit_cont span {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.visit_cont h4 {
+  color: var(--yellow);
+}
+
+.visit_cont p {
+  color: var(--blue);
+}
+
+.visit_cont > div > div:last-of-type p {
+  color: var(--yellow);
+}
+
+.visit_cont span {
+  color: var(--blue);
+}
+
+@media (max-width: 601px) {
+  #sect_us {
+    background-position: right bottom;
+  }
+}
+
+@media (max-width: 901px) {
+  .div_perro,
+  .div_mvz {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  #sect_tortugas {
+    display: none;
+  }
+
+  #sect_visit {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
 }
 
 @keyframes anim_arrow {
