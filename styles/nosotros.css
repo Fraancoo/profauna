@@ -45,7 +45,7 @@
 }
 
 #sect_team > .div_img > img {
-  height: 375px;
+  width: 500px;
 }
 
 .div_block {
@@ -118,4 +118,67 @@
   background-image: url("../assets/imgs/bg_valores.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (max-width: 1000px) {
+  #sect_team {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1000px) {
+  #sect_profauna > .div_img > img {
+    width: 350px;
+  }
+}
+
+@media (max-width: 900px) {
+  #sect_profauna {
+    display: block;
+  }
+
+  #sect_profauna > .div_img {
+    padding: 0;
+    border: none;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .div_vision,
+  .div_valores {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  #sect_profauna > .div_img > img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  #sect_profauna {
+    height: fit-content;
+  }
+}
+
+@media (max-width: 550px) {
+  #sect_profauna > .div_img > img {
+    width: 350px;
+  }
+
+  #sect_team > .div_img > img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  #sect_profauna > .div_img > img {
+    width: 300px;
+  }
+
+  #sect_team > .div_img > img {
+    width: 300px;
+  }
 }

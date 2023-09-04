@@ -62,8 +62,12 @@ a {
   color: #fff;
 }
 
-input[type="email"] {
+input[type="text"],
+input[type="email"],
+textarea {
   border: none;
+  padding: 5px;
+  font-size: 1.5rem;
 }
 
 .img_fixed {
@@ -127,6 +131,7 @@ footer {
 
 .ft_top {
   padding: 25px;
+  margin-bottom: 25px;
   display: flex;
   justify-content: space-between;
 }
@@ -162,7 +167,7 @@ footer {
 
 .div_media {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -173,8 +178,20 @@ footer {
   color: #fff;
 }
 
-@media (max-width: 901px) {
+@media (max-width: 900px) {
   nav {
     display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .ft_top {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .ft_top ul {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
