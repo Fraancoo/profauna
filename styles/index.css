@@ -250,6 +250,7 @@
 
 #sect_family {
   display: flex;
+  margin-bottom: 25px;
 }
 
 #sect_family > div {
@@ -296,6 +297,10 @@
 #sect_tortugas {
   position: absolute;
   right: 0;
+}
+
+#sect_tortugas > img {
+  height: 300px;
 }
 
 #sect_visit {
@@ -360,6 +365,127 @@
   color: var(--blue);
 }
 
+#modal_register {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  z-index: 9;
+}
+
+#modal_register > .back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+}
+
+#modal_register > .container {
+  max-height: calc(100% - 30px);
+  max-width: 800px;
+  color: #fff;
+  position: relative;
+  background-color: var(--steel);
+  background-image: url("../assets/imgs/bg_bottom_servicios-1536x152.png");
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: bottom;
+  border-radius: 5px;
+  animation: show_modal 300ms;
+  z-index: 10;
+}
+
+#modal_register > .container > .close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  padding: 15px;
+  background-color: var(--yellow);
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 11;
+}
+
+#modal_register > .container > .close > img {
+  height: 20px;
+}
+
+#modal_register > .container > .cont {
+  height: fit-content;
+  max-height: calc(100vh - 30px);
+  padding: 25px;
+  padding-bottom: 75px;
+  overflow-y: scroll;
+}
+
+#modal_register > .container > .cont > .title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+#modal_register > .container > .cont > form > .double,
+#modal_register > .container > .cont > form > .triple {
+  display: grid;
+  grid-gap: 10px;
+}
+
+#modal_register > .container > .cont > form > .double {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#modal_register > .container > .cont > form > .triple {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#modal_register > .container > .cont > form > .double input,
+#modal_register > .container > .cont > form > .triple input {
+  width: 100%;
+}
+
+#modal_register > .container > .cont > form > div {
+  margin-top: 25px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#modal_register > .container > .cont > form div {
+  display: grid;
+}
+
+#modal_register > .container > .cont > form .name {
+  padding-bottom: 10px;
+}
+
+#modal_register > .container > .cont > form > .div_pp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+#modal_register > .container > .cont > form > .div_submit {
+  text-align: center;
+  justify-items: center;
+}
+
+#modal_register > .container > .cont > form > .div_submit button {
+  width: fit-content;
+  background-color: var(--yellow);
+}
+
+#modal_register > .container > .cont > form > .div_submit button:hover {
+  background-color: var(--breen);
+}
+
+.close_modal_anim {
+  animation: close_modal 300ms both;
+}
+
 @keyframes anim_arrow {
   0% {
     transform: translateY(0);
@@ -384,6 +510,18 @@
   }
 }
 
+@keyframes show_modal {
+  0% {
+    transform: scale(0);
+  }
+}
+
+@keyframes close_modal {
+  100% {
+    transform: scale(0);
+  }
+}
+
 @media (max-width: 1200px) {
   #sect_us > .cont {
     background-position: 120%;
@@ -399,6 +537,12 @@
 
   #sect_lost div {
     width: 800px;
+  }
+}
+
+@media (max-width: 1150px) {
+  #sect_tortugas > img {
+    height: 225px;
   }
 }
 
@@ -460,6 +604,10 @@
     max-width: none;
     text-align: center;
   }
+
+  #modal_register > .container {
+    max-width: calc(100% - 30px);
+  }
 }
 
 @media (max-width: 650px) {
@@ -486,6 +634,12 @@
   }
 }
 
+@media (max-width: 600px) {
+  #modal_register > .container > .cont > form > .triple {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 500px) {
   #sect_top > .div_logo > img {
     width: 400px;
@@ -493,5 +647,9 @@
 
   #down_arrow {
     height: 30px;
+  }
+
+  #modal_register > .container > .cont > form > .double {
+    grid-template-columns: 1fr;
   }
 }

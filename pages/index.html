@@ -7,13 +7,14 @@
     <link rel="icon" href="../assets/imgs/logo.webp" />
     <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="../styles/index.css" />
-    <script src="../js/index.js" defer></script>
+    <script type="text/javascript" src="../js/index.js" defer></script>
+    <script type="text/javascript" src="../js/header.js" defer></script>
     <title>Profauna Hospital Veterinario en Tijuana</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav>
-        <ul class="nav">
+        <ul class="nav_list">
           <li>
             <a href="./index.html" class="selected">Inicio</a>
           </li>
@@ -80,7 +81,9 @@
                 compromiso a la salud de nuestros pacientes y la pasión por
                 mejorar su calidad de vida.
               </p>
-              <button>Más sobre nosotros</button>
+              <button onclick="goTo('nosotros.html')">
+                Más sobre nosotros
+              </button>
             </div>
           </div>
         </div>
@@ -94,7 +97,9 @@
             la vida animal y el compromiso con la salud de nuestros pacientes.
           </p>
         </div>
-        <button>Conoce todos nuestros servicios</button>
+        <button onclick="goTo('servicios.html')">
+          Conoce todos nuestros servicios
+        </button>
       </section>
       <section id="sect_adopt">
         <div class="cont">
@@ -109,7 +114,7 @@
                 alt="Profauna Adopt"
               />
               <h2>Tu nuevo mejor amigo podría estar aquí</h2>
-              <button>Conócelo</button>
+              <button onclick="goTo('profauna-adopt.html')">Conócelo</button>
             </div>
           </div>
           <div class="right">
@@ -121,7 +126,7 @@
         <div>
           <h2>¡Me perdí!</h2>
           <p>Ayúdame a volver a casa</p>
-          <button>¿Me ayudas?</button>
+          <button onclick="goTo('lost-and-found.html')">¿Me ayudas?</button>
         </div>
       </section>
       <section id="sect_shop">
@@ -162,7 +167,7 @@
             mayor rapidez y te mantendremos informado sobre noticias y
             promociones PROFAUNA
           </p>
-          <button>Regístrate</button>
+          <button onclick="openModal()">Regístrate</button>
         </div>
       </section>
       <section id="sect_tortugas">
@@ -219,6 +224,78 @@
           </div>
         </div>
       </section>
+      <div id="modal_register" style="display: none">
+        <div class="back" onclick="closeModal()"></div>
+        <div class="container">
+          <div class="close" onclick="closeModal()">
+            <img src="../assets/svg/GrClose.svg" alt="Cerrar" />
+          </div>
+          <div class="cont">
+            <div class="title">
+              <p class="name">Formulario de registro para Profauna Family</p>
+            </div>
+            <form onsubmit="return false">
+              <div class="single">
+                <label class="name">Nombre del tutor</label>
+                <input type="text" />
+              </div>
+              <div class="double">
+                <div>
+                  <label class="name">Correo</label>
+                  <input type="email" />
+                </div>
+                <div>
+                  <label class="name">Número de teléfono</label>
+                  <input type="number" />
+                </div>
+              </div>
+              <div class="double">
+                <div>
+                  <label class="name">Dirección</label>
+                  <input type="text" />
+                </div>
+                <div>
+                  <label class="name">Nombre del paciente</label>
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="triple">
+                <div class="col1">
+                  <label class="name">Edad del paciente</label>
+                  <input type="number" />
+                </div>
+                <div class="col2">
+                  <label class="name">Especie del paciente</label>
+                  <input type="text" />
+                </div>
+                <div class="col3">
+                  <label class="name">Raza del paciente</label>
+                  <input type="text" />
+                </div>
+              </div>
+              <div>
+                <label class="name">Comentarios adicionales/gustos</label>
+                <input type="text" />
+              </div>
+              <div class="div_pp">
+                <input type="checkbox" id="cb_pp" />
+                <label for="cb_pp">
+                  Aceptar
+                  <a
+                    style="color: var(--yellow)"
+                    href="politicas-privacidad.html"
+                  >
+                    Política de privacidad
+                  </a>
+                </label>
+              </div>
+              <div class="div_submit">
+                <button type="submit" onclick="register()">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="ft_top">
