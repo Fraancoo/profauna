@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../assets/imgs/logo.webp" />
     <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
     <link rel="stylesheet" href="../styles/lost-and-found.css" />
+    <script type="text/javascript" src="../js/header.js" defer></script>
     <title>Lost & Found - Profauna</title>
   </head>
   <body>
-    <header>
-      <nav>
+    <header id="header">
+      <nav id="nav_landscape">
         <ul class="nav_list">
           <li>
             <a href="./index.html" class="noselected">Inicio</a>
@@ -37,10 +40,58 @@
             <a href="./contacto.html" class="noselected">Contacto</a>
           </li>
           <li>
-            <button id="btn_emergency">Emergencias 24/7</button>
+            <div id="btn_emergency">Emergencias 24/7</div>
           </li>
         </ul>
       </nav>
+      <div id="nav_hamburger">
+        <div class="div_ham">
+          <div id="hamburger" onclick="handleHam(true)">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <nav id="nav_portrait" style="display: none">
+          <div class="back" onclick="handleHam(false)"></div>
+          <ul id="nav_list">
+            <li>
+              <a href="./index.html" class="noselected">Inicio</a>
+            </li>
+            <li>
+              <a href="./nosotros.html" class="noselected">Nosotros</a>
+            </li>
+            <li>
+              <a href="./servicios.html" class="noselected">Servicios</a>
+            </li>
+            <li>
+              <a href="./profauna-adopt.html" class="noselected">
+                Profauna Adopt
+              </a>
+            </li>
+            <li>
+              <a href="./lost-and-found.html" class="selected">Lost & Found</a>
+            </li>
+            <li>
+              <a href="./profauna-shop.html" class="noselected"
+                >Profauna Shop</a
+              >
+            </li>
+            <li>
+              <a href="./contacto.html" class="noselected">Contacto</a>
+            </li>
+            <li>
+              <span>Emergencias 24/7</span>
+            </li>
+            <li>
+              <a href="tel:664-200-2451" class="noselected">(664) 200 24 51</a>
+            </li>
+            <li>
+              <a href="tel:664-200-2461" class="noselected">(664) 200 24 61</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section id="sect_top">

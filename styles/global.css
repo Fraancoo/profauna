@@ -64,10 +64,3 @@ textarea {
   padding: 5px;
   font-size: 1.5rem;
 }
-
-.img_fixed {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}

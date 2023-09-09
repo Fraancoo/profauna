@@ -7,7 +7,7 @@ sectUs.tabIndex = "-1";
 
 downArrow.addEventListener("click", () => {
   let nav = document.getElementById("header");
-  nav.className = "hide_nav_anim";
+  nav.className = "hide_header";
   sectUs.scrollIntoView({
     behavior: "smooth",
     inline: "start",

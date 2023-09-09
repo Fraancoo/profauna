@@ -1,9 +1,24 @@
 header {
+  height: 100px;
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 9;
 }
+
+.show_header {
+  animation: show_header 300ms both;
+}
+
+.hide_header {
+  animation: hide_header 300ms both;
+}
+
+/*
+ - - - - - - - - - - - - - - -
+ - - - - - Landscape - - - - -
+ - - - - - - - - - - - - - - -
+*/
 
 #nav_landscape {
   width: 100%;
@@ -12,7 +27,7 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent);
 }
 
-#nav_landscape > #nav_list {
+#nav_landscape > .nav_list {
   margin-top: 25px;
   width: calc(100% - 100px);
   max-width: 1200px;
@@ -21,23 +36,23 @@ header {
   align-items: center;
 }
 
-#nav_landscape > #nav_list li,
-#nav_landscape > #nav_list li > #btn_emergency {
+#nav_landscape > .nav_list li,
+#nav_landscape > .nav_list li > #btn_emergency {
   font-size: 1.3rem;
   font-weight: 800;
   list-style: none;
   cursor: pointer;
 }
 
-#nav_landscape > #nav_list li {
+#nav_landscape > .nav_list li {
   margin: 10px 0 25px 0;
 }
 
-#nav_landscape > #nav_list li a {
+#nav_landscape > .nav_list li a {
   transition: 300ms;
 }
 
-#nav_landscape > #nav_list li > #btn_emergency {
+#nav_landscape > .nav_list li > #btn_emergency {
   padding: 15px;
   color: #fff;
   background-color: var(--emergency);
@@ -50,7 +65,7 @@ header {
   transition: 300ms;
 }
 
-#nav_landscape > #nav_list > li > a:hover {
+#nav_landscape > .nav_list > li > a:hover {
   color: var(--green);
 }
 
@@ -62,7 +77,11 @@ header {
   transition: 300ms;
 }
 
-/* - - - - - - - - - - - - - - - - - - - - */
+/*
+ - - - - - - - - - - - - - - -
+ - - - - - Portrait  - - - - -
+ - - - - - - - - - - - - - - -
+*/
 
 #nav_hamburger > .div_ham {
   display: flex;
@@ -70,18 +89,22 @@ header {
 }
 
 #nav_hamburger > .div_ham > div {
+  padding: 10px;
   position: fixed;
   display: grid;
   justify-items: center;
-  gap: 7px;
+  gap: 6px;
   margin: 25px 0;
   cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 #nav_hamburger > .div_ham > div > span {
   height: 5px;
-  width: 35px;
-  background-color: #fff;
+  width: 30px;
+  background-color: var(--yellow);
   cursor: pointer;
   transition: 300ms;
 }
@@ -96,6 +119,7 @@ header {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: 300ms;
 }
 
 #nav_hamburger > #nav_portrait > #nav_list {
@@ -110,7 +134,6 @@ header {
   font-size: 1.3rem;
   font-weight: 900;
   border-bottom: 1px solid #cfcfcf;
-  transition: 300ms;
   cursor: pointer;
 }
 
@@ -129,35 +152,77 @@ header {
   background-color: var(--emergency);
 }
 
-/* - - - - - - - - - - - - - - - - - - - - */
-
-.show_nav_anim {
+.show_nav {
   animation: show_nav 300ms both;
 }
 
-.hide_nav_anim {
+.hide_nav {
   animation: hide_nav 300ms both;
 }
 
-@keyframes show_nav {
+/*
+ - - - - - - - - - - - - - - -
+ - - - - - Keyframes - - - - -
+ - - - - - - - - - - - - - - -
+*/
+
+@keyframes show_header {
   0% {
     transform: translateY(-100%);
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes hide_header {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes show_nav {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
 @keyframes hide_nav {
   0% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
   100% {
-    transform: translateY(-100%);
+    transform: translateX(-100%);
   }
 }
 
-@media (max-width: 1100px) {
+/*
+ - - - - - - - - - - - - - - -
+ - - - - - Media Query - - - -
+ - - - - - - - - - - - - - - -
+*/
+
+@media (max-width: 1150px) {
+  #nav_landscape > .nav_list li,
+  #nav_landscape > .nav_list li > #btn_emergency {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  #nav_landscape > .nav_list li,
+  #nav_landscape > .nav_list li > #btn_emergency {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 950px) {
   #nav_landscape {
     display: none;
   }
@@ -167,7 +232,7 @@ header {
   }
 }
 
-@media (min-width: 1101px) {
+@media (min-width: 951px) {
   #nav_hamburger {
     display: none;
   }

@@ -1,6 +1,7 @@
 #sect_top {
   height: 500px;
   display: flex;
+  justify-content: center;
   align-items: center;
   background-image: url("../assets/imgs/top_servicios.jpg");
   background-size: cover;
@@ -8,6 +9,7 @@
 }
 
 #sect_top > div {
+  width: 1200px;
   padding-left: 20px;
 }
 
@@ -69,13 +71,27 @@
 
 #sect_data .div_info {
   width: 600px;
+  color: var(--blue);
   background-color: #f0f0f0;
+}
+
+#sect_data .div_info > div {
+  padding: 15px;
+}
+
+#sect_data .div_info li {
+  color: var(--yellow);
+  list-style-position: inside;
+}
+
+#sect_data .div_info li span {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--blue);
 }
 
 #sect_beauty {
   padding: 15px;
-  /* display: flex;
-  gap: 30px; */
 }
 
 #sect_beauty > .div_carrusel {

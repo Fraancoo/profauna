@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../assets/imgs/logo.webp" />
     <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
     <link rel="stylesheet" href="../styles/servicios.css" />
+    <script type="text/javascript" src="../js/header.js" defer></script>
+    <script type="text/javascript" src="../js/servicios.js" defer></script>
     <title>Servicios - Profauna</title>
   </head>
   <body>
-    <header>
-      <nav>
+    <header id="header">
+      <nav id="nav_landscape">
         <ul class="nav_list">
           <li>
             <a href="./index.html" class="noselected">Inicio</a>
@@ -37,10 +41,60 @@
             <a href="./contacto.html" class="noselected">Contacto</a>
           </li>
           <li>
-            <button id="btn_emergency">Emergencias 24/7</button>
+            <div id="btn_emergency">Emergencias 24/7</div>
           </li>
         </ul>
       </nav>
+      <div id="nav_hamburger">
+        <div class="div_ham">
+          <div id="hamburger" onclick="handleHam(true)">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <nav id="nav_portrait" style="display: none">
+          <div class="back" onclick="handleHam(false)"></div>
+          <ul id="nav_list">
+            <li>
+              <a href="./index.html" class="noselected">Inicio</a>
+            </li>
+            <li>
+              <a href="./nosotros.html" class="noselected">Nosotros</a>
+            </li>
+            <li>
+              <a href="./servicios.html" class="selected">Servicios</a>
+            </li>
+            <li>
+              <a href="./profauna-adopt.html" class="noselected">
+                Profauna Adopt
+              </a>
+            </li>
+            <li>
+              <a href="./lost-and-found.html" class="noselected"
+                >Lost & Found</a
+              >
+            </li>
+            <li>
+              <a href="./profauna-shop.html" class="noselected"
+                >Profauna Shop</a
+              >
+            </li>
+            <li>
+              <a href="./contacto.html" class="noselected">Contacto</a>
+            </li>
+            <li>
+              <span>Emergencias 24/7</span>
+            </li>
+            <li>
+              <a href="tel:664-200-2451" class="noselected">(664) 200 24 51</a>
+            </li>
+            <li>
+              <a href="tel:664-200-2461" class="noselected">(664) 200 24 61</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section id="sect_top">
@@ -76,7 +130,185 @@
                 <li>Velación</li>
               </ul>
             </div>
-            <div class="div_info"></div>
+            <div class="div_info">
+              <div id="medical_attention">
+                <h1>EMERGENCIAS 24/7</h1>
+                <p>(664) 200 24 51 | (664) 200 24 61</p>
+                <h2>Estamos para ayudarte</h2>
+                <p>Atención inmediata 24/7 a pacientes en estado crítico.</p>
+                <div>
+                  <img
+                    src="../assets/imgs/serv_emergencia.png"
+                    alt="Servicio de emergencia"
+                  />
+                </div>
+              </div>
+              <div id="general_medicine">
+                <ul>
+                  <li>
+                    <span>Consultas</span>
+                  </li>
+                  <li>
+                    <span>Tratamientos médicos</span>
+                  </li>
+                  <li>
+                    <span>
+                      Estudios de gabinete (radiografías, ultrasonido,
+                      electrocardiograma, ecocardiograma)
+                    </span>
+                  </li>
+                  <li>
+                    <span>Ultrasonido (paneo y estudio ultrasonográfico)</span>
+                  </li>
+                </ul>
+              </div>
+              <div id="preventive_medicine">
+                <div class="ul_cols">
+                  <ul>
+                    <li>
+                      <span>Desparasitación general</span>
+                    </li>
+                    <li>
+                      <span>Vacunas múltiples caninas</span>
+                    </li>
+                    <li>
+                      <span>Vacuna giardia</span>
+                    </li>
+                    <li>
+                      <span>Vacuna bordetella</span>
+                    </li>
+                    <li>
+                      <span>Vacuna leucemia</span>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <span>Vacuna de rabia general</span>
+                    </li>
+                    <li>
+                      <span>Vacuna triple viral felina</span>
+                    </li>
+                    <li>
+                      <span>Vacunas anuales perro</span>
+                    </li>
+                    <li>
+                      <span>Vacunas anuales gato</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <img src="../assets/imgs/vacunas.jpg" alt="Vacunas" />
+                </div>
+              </div>
+              <div id="issuance_certificates">
+                <ul>
+                  <li>
+                    <span>Certificado de salud</span>
+                  </li>
+                  <li>
+                    <span>Certificado de vacunación</span>
+                  </li>
+                  <li>
+                    <span>Certificado de desparasitación</span>
+                  </li>
+                  <div>
+                    <img
+                      src="../assets/imgs/serv_expedicion-certificados.png"
+                      alt="Expedición de certificados"
+                    />
+                  </div>
+                </ul>
+              </div>
+              <div id="hospital">
+                <div class="ul_cols">
+                  <ul>
+                    <li>
+                      <span>Curaciones</span>
+                    </li>
+                    <li>
+                      <span>Hospitalización</span>
+                    </li>
+                    <li>
+                      <span>Observación Médica</span>
+                    </li>
+                    <li>
+                      <span>Transfusión sanguínea</span>
+                    </li>
+                    <li>
+                      <span>Cirugías Ortopédicas</span>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <span>Cirugías de tejidos blandos</span>
+                    </li>
+                    <li>
+                      <span>Cirugía general</span>
+                    </li>
+                    <li>
+                      <span>Esterilización</span>
+                    </li>
+                    <li>
+                      <span>Castración</span>
+                    </li>
+                    <li>
+                      <span>Cesárea</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <img src="../assets/imgs/img-hospital-1.png" alt="Hospital" />
+                </div>
+              </div>
+              <div id="outpatient_procedures">
+                <ul>
+                  <li>
+                    <span>Limpieza ótica</span>
+                  </li>
+                  <li>
+                    <span>Limpieza dental</span>
+                  </li>
+                  <li>
+                    <span>Extracción dentales</span>
+                  </li>
+                  <li>
+                    <span>Estudios Radiográficos contrastado</span>
+                  </li>
+                </ul>
+                <div>
+                  <img
+                    src="../assets/imgs/serv_Procedimientos-ambulatorios.png"
+                    alt="Procedimientos ambulatorios"
+                  />
+                </div>
+              </div>
+              <div id="stay">
+                <ul>
+                  <li>
+                    <span>Hospedaje</span>
+                  </li>
+                  <li>
+                    <span>Guarderia</span>
+                  </li>
+                </ul>
+                <div>
+                  <img src="../assets/imgs/img-estancia-1.png" alt="Estancia" />
+                </div>
+              </div>
+              <div id="vigil">
+                <ul>
+                  <li>
+                    <span>Cremación con recuperación</span>
+                  </li>
+                  <li>
+                    <span>Cremación sin recuperación</span>
+                  </li>
+                </ul>
+                <div>
+                  <img src="../assets/imgs/serv_Velacion.png" alt="Velación" />
+                </div>
+              </div>
+            </div>
           </div>
           <div class="div_img">
             <img src="../assets/imgs/img-pancho-servicios.png" alt="Pancho" />

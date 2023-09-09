@@ -87,6 +87,7 @@
 
 .div_mision {
   width: 100%;
+  background-color: var(--indigo);
   background-image: url("../assets/imgs/bg_mision.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
