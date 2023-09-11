@@ -6,8 +6,8 @@ const downArrow = document.getElementById("down_arrow"),
 sectUs.tabIndex = "-1";
 
 downArrow.addEventListener("click", () => {
-  let nav = document.getElementById("header");
-  nav.className = "hide_header";
+  let navLandscape = document.getElementById("nav_landscape");
+  navLandscape.className = "hide_nav_landscape";
   sectUs.scrollIntoView({
     behavior: "smooth",
     inline: "start",

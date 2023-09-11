@@ -6,12 +6,12 @@ header {
   z-index: 9;
 }
 
-.show_header {
-  animation: show_header 300ms both;
+.show_nav_landscape {
+  animation: show_nav_landscape 300ms both;
 }
 
-.hide_header {
-  animation: hide_header 300ms both;
+.hide_nav_landscape {
+  animation: hide_nav_landscape 300ms both;
 }
 
 /*
@@ -69,12 +69,30 @@ header {
   color: var(--green);
 }
 
-.selected {
+#nav_landscape .selected {
   color: var(--green);
 }
 
-.noselected {
+#nav_landscape .noselected {
+  color: #fff;
+}
+
+#nav_landscape .noselected,
+#nav_landscape .selected {
+  text-shadow: 1px 1px 1px #454545;
+}
+
+#nav_landscape .noselected,
+#nav_portrait .noselected {
   transition: 300ms;
+}
+
+#nav_portrait .selected {
+  color: var(--green);
+}
+
+#nav_portrait .noselected {
+  color: var(--blue);
 }
 
 /*
@@ -113,6 +131,7 @@ header {
   height: 100vh;
   width: 100vw;
   position: fixed;
+  display: block;
 }
 
 #nav_hamburger > #nav_portrait > .back {
@@ -152,6 +171,14 @@ header {
   background-color: var(--emergency);
 }
 
+.show_hamburger {
+  animation: show_hamburger 300ms both;
+}
+
+.hide_hamburger {
+  animation: hide_hamburger 300ms both;
+}
+
 .show_nav {
   animation: show_nav 300ms both;
 }
@@ -166,21 +193,43 @@ header {
  - - - - - - - - - - - - - - -
 */
 
-@keyframes show_header {
+@keyframes show_nav_landscape {
   0% {
     transform: translateY(-100%);
   }
+
   100% {
     transform: translateY(0);
   }
 }
 
-@keyframes hide_header {
+@keyframes hide_nav_landscape {
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-100%);
+  }
+}
+
+@keyframes show_hamburger {
+  0% {
+    transform: translateY(-200%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes hide_hamburger {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-200%);
   }
 }
 
@@ -226,23 +275,10 @@ header {
   #nav_landscape {
     display: none;
   }
-
-  .noselected {
-    color: var(--blue);
-  }
 }
 
 @media (min-width: 951px) {
   #nav_hamburger {
     display: none;
-  }
-
-  .noselected {
-    color: white;
-  }
-
-  .selected,
-  .noselected {
-    text-shadow: 1px 1px 1px #454545;
   }
 }

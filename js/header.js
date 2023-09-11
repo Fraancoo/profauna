@@ -1,15 +1,18 @@
 const header = document.getElementById("header");
 const hamburger = document.getElementById("hamburger");
+const navLandscape = document.getElementById("nav_landscape");
 const navPortrait = document.getElementById("nav_portrait");
 
 const timer = (ms) => new Promise((res) => setTimeout(res, ms));
 
 window.onwheel = async (e) => {
   if (e.wheelDeltaY > 0) {
-    header.className = "show_header";
+    navLandscape.className = "show_nav_landscape";
+    hamburger.className = "show_hamburger";
     showNav = true;
   } else {
-    header.className = "hide_header";
+    navLandscape.className = "hide_nav_landscape";
+    hamburger.className = "hide_hamburger";
     showNav = false;
   }
 };

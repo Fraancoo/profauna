@@ -53,7 +53,7 @@
             <span></span>
           </div>
         </div>
-        <nav id="nav_portrait" style="display: none">
+        <nav id="nav_portrait">
           <div class="back" onclick="handleHam(false)"></div>
           <ul id="nav_list">
             <li>
@@ -116,203 +116,219 @@
       </section>
       <section id="sect_data">
         <h1>Desde consultas generales, hasta cirugías de emergencia.</h1>
-        <div>
-          <div class="div_table">
-            <div class="div_opts">
+        <div class="wrapper">
+          <ul id="opts">
+            <li
+              id="ma"
+              onclick="selectOpt('ma', 'medical_attention')"
+              class="active"
+            >
+              Atención de emergencia
+            </li>
+            <li id="gm" onclick="selectOpt('gm', 'general_medicine')">
+              Medicina general
+            </li>
+            <li id="pm" onclick="selectOpt('pm', 'preventive_medicine')">
+              Medicina preventiva
+            </li>
+            <li id="ic" onclick="selectOpt('ic', 'issuance_certificates')">
+              Expedición de certificados
+            </li>
+            <li id="h" onclick="selectOpt('h', 'hospital')">Hospital</li>
+            <li id="op" onclick="selectOpt('op', 'outpatient_procedures')">
+              Procedimientos ambulatorios
+            </li>
+            <li id="s" onclick="selectOpt('s', 'stay')">Estancia</li>
+            <li id="v" onclick="selectOpt('v', 'vigil')">Velación</li>
+          </ul>
+          <div id="data">
+            <div id="medical_attention" class="shown">
+              <h1>EMERGENCIAS 24/7</h1>
+              <p>(664) 200 24 51 | (664) 200 24 61</p>
+              <h2>Estamos para ayudarte</h2>
+              <p>Atención inmediata 24/7 a pacientes en estado crítico.</p>
+              <div class="div_img">
+                <img
+                  src="../assets/imgs/serv_emergencia.png"
+                  alt="Servicio de emergencia"
+                />
+              </div>
+            </div>
+            <div id="general_medicine" class="hiden">
               <ul>
-                <li>Atención de emergencia</li>
-                <li>Medicina general</li>
-                <li>Medicina preventiva</li>
-                <li>Expedición de certificados</li>
-                <li>Hospital</li>
-                <li>Procedimientos ambulatorios</li>
-                <li>Estancia</li>
-                <li>Velación</li>
+                <li>
+                  <span>Consultas</span>
+                </li>
+                <li>
+                  <span>Tratamientos médicos</span>
+                </li>
+                <li>
+                  <span>
+                    Estudios de gabinete (radiografías, ultrasonido,
+                    electrocardiograma, ecocardiograma)
+                  </span>
+                </li>
+                <li>
+                  <span>Ultrasonido (paneo y estudio ultrasonográfico)</span>
+                </li>
               </ul>
+              <div class="div_img">
+                <img
+                  src="../assets/imgs/medicinagral-rayosx.jpg"
+                  alt="Medicina general"
+                />
+              </div>
             </div>
-            <div class="div_info">
-              <div id="medical_attention">
-                <h1>EMERGENCIAS 24/7</h1>
-                <p>(664) 200 24 51 | (664) 200 24 61</p>
-                <h2>Estamos para ayudarte</h2>
-                <p>Atención inmediata 24/7 a pacientes en estado crítico.</p>
-                <div>
-                  <img
-                    src="../assets/imgs/serv_emergencia.png"
-                    alt="Servicio de emergencia"
-                  />
-                </div>
-              </div>
-              <div id="general_medicine">
+            <div id="preventive_medicine" class="hiden">
+              <div class="ul_cols">
                 <ul>
                   <li>
-                    <span>Consultas</span>
+                    <span>Desparasitación general</span>
                   </li>
                   <li>
-                    <span>Tratamientos médicos</span>
+                    <span>Vacunas múltiples caninas</span>
                   </li>
                   <li>
-                    <span>
-                      Estudios de gabinete (radiografías, ultrasonido,
-                      electrocardiograma, ecocardiograma)
-                    </span>
+                    <span>Vacuna giardia</span>
                   </li>
                   <li>
-                    <span>Ultrasonido (paneo y estudio ultrasonográfico)</span>
+                    <span>Vacuna bordetella</span>
+                  </li>
+                  <li>
+                    <span>Vacuna leucemia</span>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <span>Vacuna de rabia general</span>
+                  </li>
+                  <li>
+                    <span>Vacuna triple viral felina</span>
+                  </li>
+                  <li>
+                    <span>Vacunas anuales perro</span>
+                  </li>
+                  <li>
+                    <span>Vacunas anuales gato</span>
                   </li>
                 </ul>
               </div>
-              <div id="preventive_medicine">
-                <div class="ul_cols">
-                  <ul>
-                    <li>
-                      <span>Desparasitación general</span>
-                    </li>
-                    <li>
-                      <span>Vacunas múltiples caninas</span>
-                    </li>
-                    <li>
-                      <span>Vacuna giardia</span>
-                    </li>
-                    <li>
-                      <span>Vacuna bordetella</span>
-                    </li>
-                    <li>
-                      <span>Vacuna leucemia</span>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>
-                      <span>Vacuna de rabia general</span>
-                    </li>
-                    <li>
-                      <span>Vacuna triple viral felina</span>
-                    </li>
-                    <li>
-                      <span>Vacunas anuales perro</span>
-                    </li>
-                    <li>
-                      <span>Vacunas anuales gato</span>
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <img src="../assets/imgs/vacunas.jpg" alt="Vacunas" />
-                </div>
+              <div class="div_img">
+                <img src="../assets/imgs/vacunas.jpg" alt="Vacunas" />
               </div>
-              <div id="issuance_certificates">
+            </div>
+            <div id="issuance_certificates" class="hiden">
+              <ul>
+                <li>
+                  <span>Certificado de salud</span>
+                </li>
+                <li>
+                  <span>Certificado de vacunación</span>
+                </li>
+                <li>
+                  <span>Certificado de desparasitación</span>
+                </li>
+              </ul>
+              <div class="div_img">
+                <img
+                  src="../assets/imgs/serv_expedicion-certificados.png"
+                  alt="Expedición de certificados"
+                />
+              </div>
+            </div>
+            <div id="hospital" class="hiden">
+              <div class="ul_cols">
                 <ul>
                   <li>
-                    <span>Certificado de salud</span>
+                    <span>Curaciones</span>
                   </li>
                   <li>
-                    <span>Certificado de vacunación</span>
+                    <span>Hospitalización</span>
                   </li>
                   <li>
-                    <span>Certificado de desparasitación</span>
+                    <span>Observación Médica</span>
                   </li>
-                  <div>
-                    <img
-                      src="../assets/imgs/serv_expedicion-certificados.png"
-                      alt="Expedición de certificados"
-                    />
-                  </div>
+                  <li>
+                    <span>Transfusión sanguínea</span>
+                  </li>
+                  <li>
+                    <span>Cirugías Ortopédicas</span>
+                  </li>
                 </ul>
-              </div>
-              <div id="hospital">
-                <div class="ul_cols">
-                  <ul>
-                    <li>
-                      <span>Curaciones</span>
-                    </li>
-                    <li>
-                      <span>Hospitalización</span>
-                    </li>
-                    <li>
-                      <span>Observación Médica</span>
-                    </li>
-                    <li>
-                      <span>Transfusión sanguínea</span>
-                    </li>
-                    <li>
-                      <span>Cirugías Ortopédicas</span>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>
-                      <span>Cirugías de tejidos blandos</span>
-                    </li>
-                    <li>
-                      <span>Cirugía general</span>
-                    </li>
-                    <li>
-                      <span>Esterilización</span>
-                    </li>
-                    <li>
-                      <span>Castración</span>
-                    </li>
-                    <li>
-                      <span>Cesárea</span>
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <img src="../assets/imgs/img-hospital-1.png" alt="Hospital" />
-                </div>
-              </div>
-              <div id="outpatient_procedures">
                 <ul>
                   <li>
-                    <span>Limpieza ótica</span>
+                    <span>Cirugías de tejidos blandos</span>
                   </li>
                   <li>
-                    <span>Limpieza dental</span>
+                    <span>Cirugía general</span>
                   </li>
                   <li>
-                    <span>Extracción dentales</span>
+                    <span>Esterilización</span>
                   </li>
                   <li>
-                    <span>Estudios Radiográficos contrastado</span>
+                    <span>Castración</span>
+                  </li>
+                  <li>
+                    <span>Cesárea</span>
                   </li>
                 </ul>
-                <div>
-                  <img
-                    src="../assets/imgs/serv_Procedimientos-ambulatorios.png"
-                    alt="Procedimientos ambulatorios"
-                  />
-                </div>
               </div>
-              <div id="stay">
-                <ul>
-                  <li>
-                    <span>Hospedaje</span>
-                  </li>
-                  <li>
-                    <span>Guarderia</span>
-                  </li>
-                </ul>
-                <div>
-                  <img src="../assets/imgs/img-estancia-1.png" alt="Estancia" />
-                </div>
+              <div class="div_img">
+                <img src="../assets/imgs/img-hospital-1.png" alt="Hospital" />
               </div>
-              <div id="vigil">
-                <ul>
-                  <li>
-                    <span>Cremación con recuperación</span>
-                  </li>
-                  <li>
-                    <span>Cremación sin recuperación</span>
-                  </li>
-                </ul>
-                <div>
-                  <img src="../assets/imgs/serv_Velacion.png" alt="Velación" />
-                </div>
+            </div>
+            <div id="outpatient_procedures" class="hiden">
+              <ul>
+                <li>
+                  <span>Limpieza ótica</span>
+                </li>
+                <li>
+                  <span>Limpieza dental</span>
+                </li>
+                <li>
+                  <span>Extracción dentales</span>
+                </li>
+                <li>
+                  <span>Estudios Radiográficos contrastado</span>
+                </li>
+              </ul>
+              <div class="div_img">
+                <img
+                  src="../assets/imgs/serv_Procedimientos-ambulatorios.png"
+                  alt="Procedimientos ambulatorios"
+                />
+              </div>
+            </div>
+            <div id="stay" class="hiden">
+              <ul>
+                <li>
+                  <span>Hospedaje</span>
+                </li>
+                <li>
+                  <span>Guarderia</span>
+                </li>
+              </ul>
+              <div class="div_img">
+                <img src="../assets/imgs/img-estancia-1.png" alt="Estancia" />
+              </div>
+            </div>
+            <div id="vigil" class="hiden">
+              <ul>
+                <li>
+                  <span>Cremación con recuperación</span>
+                </li>
+                <li>
+                  <span>Cremación sin recuperación</span>
+                </li>
+              </ul>
+              <div class="div_img">
+                <img src="../assets/imgs/serv_Velacion.png" alt="Velación" />
               </div>
             </div>
           </div>
-          <div class="div_img">
-            <img src="../assets/imgs/img-pancho-servicios.png" alt="Pancho" />
-          </div>
+        </div>
+        <div class="div_img">
+          <img src="../assets/imgs/img-pancho-servicios.png" alt="Pancho" />
         </div>
       </section>
       <section id="sect_beauty">
