@@ -8,7 +8,11 @@ function selectOpt(optId, dataId) {
   }
 
   for (const d of data.children) {
-    if (dataId === d.id) d.className = "shown";
-    else d.className = "hiden";
+    const [opt, cont] = d.children;
+    if (dataId === d.id) {
+      cont.className = "shown";
+    } else {
+      cont.className = "hiden";
+    }
   }
 }
