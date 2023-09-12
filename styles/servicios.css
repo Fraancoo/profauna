@@ -191,7 +191,7 @@
 
 #sect_lab > .div_list {
   display: flex;
-  gap: 30px;
+  gap: 0 30px;
 }
 
 #sect_lab > .div_list li {
@@ -199,6 +199,8 @@
   color: var(--yellow);
   font-size: 1.3rem;
   font-weight: bold;
+  list-style-position: inside;
+  white-space: nowrap;
 }
 
 #sect_lab > .div_list span {
@@ -278,17 +280,7 @@
   }
 }
 
-@media (max-width: 1100px) {
-  #sect_data > .wrapper {
-    justify-content: center;
-  }
-
-  #sect_data > .div_img {
-    display: none;
-  }
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   #sect_lab {
     flex-wrap: wrap;
   }
@@ -300,6 +292,23 @@
 
   #sect_lab > .div_list {
     width: 100%;
+    flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  #sect_data > .wrapper {
+    justify-content: center;
+  }
+
+  #sect_data > .div_img {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  #sect_lab > .div_list {
+    justify-content: left;
   }
 }
