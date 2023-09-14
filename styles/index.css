@@ -662,3 +662,9 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 450px) {
+  #sect_top > .div_logo > img {
+    width: 320px;
+  }
+}

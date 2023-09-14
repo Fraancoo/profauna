@@ -1,7 +1,7 @@
 #sect_top {
   height: 500px;
-  padding: 25px;
   display: flex;
+  justify-content: center;
   align-items: center;
   background-image: url("../assets/imgs/top_adopt.jpg");
   background-repeat: no-repeat;
@@ -9,8 +9,18 @@
   border-radius: 0 0 50% 50% / 0 0 100px 100px;
 }
 
+#sect_top > div {
+  width: 1200px;
+}
+
 #sect_info {
-  padding: 25px;
+  display: grid;
+  justify-content: center;
+}
+
+#sect_info > div {
+  width: 1200px;
+  padding: 20px 0;
   display: flex;
   gap: 30px;
 }
@@ -35,13 +45,25 @@
   list-style-position: inside;
 }
 
+#sect_info .div_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #sect_adopt {
   margin-top: 30px;
+  display: grid;
+  justify-content: center;
   color: var(--indigo);
 }
 
-#sect_adopt h1,
-#sect_adopt h2 {
+#sect_adopt > div {
+  width: 1200px;
+}
+
+#sect_adopt .div_title > h1,
+#sect_adopt .div_title > h2 {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
@@ -50,6 +72,8 @@
 #sect_adopt .div_animals {
   padding: 30px;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -90,4 +114,74 @@
   background-image: url("../assets/imgs/img-adopt-bottom.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+
+@media (max-width: 1300px) {
+  #sect_top > div,
+  #sect_info > div,
+  #sect_adopt > div {
+    width: 1000px;
+  }
+
+  #sect_info .div_img > img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1100px) {
+  #sect_top > div,
+  #sect_info > div,
+  #sect_adopt > div {
+    width: 800px;
+  }
+
+  #sect_info > div {
+    flex-wrap: wrap;
+  }
+
+  #sect_info .div_img {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  #sect_top > div {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+  }
+
+  #sect_info > div,
+  #sect_adopt > div {
+    width: 600px;
+  }
+}
+
+@media (max-width: 700px) {
+  #sect_info > div,
+  #sect_adopt > div {
+    width: 400px;
+  }
+
+  #sect_info .div_img > img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  #sect_top > div {
+    padding: 15px;
+    width: calc(100% - 30px);
+  }
+
+  #sect_top > div > img {
+    min-width: 250px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  #sect_info > div {
+    width: 350px;
+  }
 }

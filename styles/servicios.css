@@ -196,32 +196,38 @@
 }
 
 #sect_lab {
-  padding: 75px 25px;
-  display: flex;
-  gap: 30px;
+  display: grid;
+  justify-content: center;
   background-image: url("../assets/imgs/bg_profaunalab-1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
 
-#sect_lab > .div_desc {
+#sect_lab > div {
+  width: 1200px;
+  padding: 75px 25px;
+  display: flex;
+  gap: 30px;
+}
+
+#sect_lab .div_desc {
   color: #fff;
   width: 30%;
 }
 
-#sect_lab > .div_desc p {
+#sect_lab .div_desc p {
   margin-top: 25px;
   font-size: 1.3rem;
   font-weight: bold;
 }
 
-#sect_lab > .div_list {
+#sect_lab .div_list {
   display: flex;
   gap: 0 30px;
 }
 
-#sect_lab > .div_list li {
+#sect_lab .div_list li {
   margin-bottom: 20px;
   color: var(--yellow);
   font-size: 1.3rem;
@@ -230,7 +236,7 @@
   white-space: nowrap;
 }
 
-#sect_lab > .div_list span {
+#sect_lab .div_list span {
   color: #fff;
 }
 
@@ -268,16 +274,17 @@
 }
 
 @media (max-width: 1200px) {
-  #sect_lab {
+  #sect_lab > div {
+    width: calc(100% - 30px);
     flex-wrap: wrap;
   }
 
-  #sect_lab > .div_desc {
+  #sect_lab .div_desc {
     width: 100%;
     text-align: center;
   }
 
-  #sect_lab > .div_list {
+  #sect_lab .div_list {
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
@@ -354,7 +361,7 @@
     width: 100%;
   }
 
-  #sect_lab > .div_list {
+  #sect_lab .div_list {
     justify-content: left;
   }
 }
@@ -385,36 +392,30 @@
   }
 
   #sect_beauty .div_slider {
-    height: 300px;
-    width: 450px;
+    height: 320px;
+    width: 400px;
   }
-
-  #sect_beauty .div_slider > #slider {
-    height: 300px;
-    width: 450px;
-  }
-
-  /*
-    #sect_beauty .div_slider {
-    position: relative;
-    width: fit-content;
-    height: 400px;
-    display: flex;
-    overflow: hidden;
-  }
-
-  #sect_beauty .div_slider > #slider {
-    position: relative;
-    display: flex;
-    width: 500px;
-    transition: transform 300ms ease;
-  }
-  */
 }
 
 @media (max-width: 450px) {
   #sect_top .div_img > img {
     width: 350px;
+  }
+
+  #sect_beauty .div_slider {
+    height: 300px;
+    width: 375px;
+  }
+}
+
+@media (max-width: 400px) {
+  #sect_top .div_img > img {
+    width: 300px;
+  }
+
+  #sect_beauty .div_slider {
+    height: 240px;
+    width: 300px;
   }
 }
 

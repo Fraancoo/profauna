@@ -1,99 +1,118 @@
 #sect_top {
   height: 600px;
-  display: flex;
+  display: grid;
   justify-content: center;
-  align-items: center;
-  gap: 50px;
-  padding: 50px 30px 0 30px;
   background-image: url("../assets/imgs/top_contacto.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   border-radius: 0 0 50% 50% / 0 0 100px 100px;
 }
 
-#sect_top > .div_title {
-  color: #fff;
-  font-size: 2rem;
+#sect_top > div {
+  height: 100%;
+  width: 1200px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 
-#sect_top > .div_title img {
+#sect_top .div_title {
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+#sect_top .div_title img {
   width: 450px;
   margin-bottom: 30px;
 }
 
-#sect_top > .div_form > form > div {
+#sect_top .div_form > form > div {
   display: flex;
   gap: 20px;
   margin-bottom: 30px;
 }
 
-#sect_top > .div_form p {
+#sect_top .div_form p {
   margin-bottom: 10px;
   color: #fff;
   font-size: 1.3rem;
   font-weight: bold;
 }
 
-#sect_top > .div_form textarea {
-  height: 100px !important;
-  min-width: 100%;
+#sect_top .div_form label {
+  width: 100%;
 }
 
-#sect_top > .div_form button {
+#sect_top .div_form textarea {
+  height: 100px !important;
+  width: 100%;
+}
+
+#sect_top .div_form button {
   background-color: var(--yellow);
 }
 
-#sect_top > .div_form button:hover {
+#sect_top .div_form button:hover {
   background-color: var(--breen);
 }
 
 #sect_map {
+  width: 100%;
   margin-top: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-#sect_map > section {
+#sect_map > div {
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+}
+
+#sect_map > div > section {
   max-width: 350px;
 }
 
-#sect_map > .schedule > h1,
-#sect_map > .contact > h1 {
+#sect_map .schedule > h1,
+#sect_map .contact > h1 {
   color: var(--blue);
   font-size: 1.7rem;
   font-weight: 900;
 }
 
-#sect_map > .schedule > h2,
-#sect_map > .contact > p {
+#sect_map .schedule > h2,
+#sect_map .contact > p {
   color: var(--yellow);
   font-size: 1.3rem;
   font-weight: 900;
 }
 
-#sect_map > .schedule > h2:last-of-type {
+#sect_map .schedule > h2:last-of-type {
   margin-top: 10px;
 }
 
-#sect_map > .schedule > p {
+#sect_map .schedule > p {
   color: var(--blue);
   font-size: 1.3rem;
   font-weight: bold;
   line-height: 2rem;
 }
 
-#sect_map > .contact > .media {
+#sect_map .contact > .media {
   margin-top: 20px;
 }
 
-#sect_map > .contact > .media > div {
+#sect_map .contact > .media > div {
   margin-top: 15px;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-#sect_map > .contact > .media span {
+#sect_map .contact > .media span {
   color: var(--blue);
   font-size: 1.3rem;
   font-weight: 900;
@@ -105,4 +124,110 @@
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: contain;
+}
+
+@media (max-width: 1300px) {
+  #sect_top {
+    height: fit-content;
+  }
+
+  #sect_top > div,
+  #sect_map > div {
+    width: 1000px;
+  }
+
+  #sect_top > div {
+    padding-top: 150px;
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 1100px) {
+  #sect_top {
+    background-size: cover;
+  }
+
+  #sect_top > div {
+    width: 800px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  #sect_top .div_title {
+    margin-bottom: 25px;
+  }
+
+  #sect_top .div_title h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  #sect_top .div_title img {
+    width: 400px;
+    margin-bottom: 15px;
+  }
+
+  #sect_top .div_form .div_btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  #sect_map > div {
+    max-width: calc(100% - 100px);
+  }
+}
+
+@media (max-width: 1000px) {
+  #sect_map > div {
+    width: 800px;
+    display: grid;
+  }
+}
+
+@media (max-width: 900px) {
+  #sect_top > div,
+  #sect_map > div {
+    width: 600px;
+  }
+}
+
+@media (max-width: 700px) {
+  #sect_top > div,
+  #sect_map > div {
+    width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  #sect_top .div_title img {
+    width: 400px;
+  }
+
+  #sect_top .div_form {
+    width: calc(100% - 30px);
+    padding: 15px;
+  }
+
+  #sect_top .div_form > form > div {
+    flex-wrap: wrap;
+  }
+
+  #sect_top input {
+    width: 100%;
+  }
+
+  #sect_top > div {
+    margin: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  #sect_top > div,
+  #sect_map > div {
+    width: 350px;
+  }
+
+  #sect_top .div_title img {
+    width: 350px;
+  }
 }
