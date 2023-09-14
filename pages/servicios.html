@@ -115,323 +115,337 @@
         </div>
       </section>
       <section id="sect_data">
-        <h1>Desde consultas generales, hasta cirugías de emergencia.</h1>
-        <div class="wrapper">
-          <ul id="opts">
-            <li
-              id="ma"
-              onclick="selectOpt('ma', 'medical_attention')"
-              class="active"
-            >
-              Atención de emergencia
-            </li>
-            <li id="gm" onclick="selectOpt('gm', 'general_medicine')">
-              Medicina general
-            </li>
-            <li id="pm" onclick="selectOpt('pm', 'preventive_medicine')">
-              Medicina preventiva
-            </li>
-            <li id="ic" onclick="selectOpt('ic', 'issuance_certificates')">
-              Expedición de certificados
-            </li>
-            <li id="h" onclick="selectOpt('h', 'hospital')">Hospital</li>
-            <li id="op" onclick="selectOpt('op', 'outpatient_procedures')">
-              Procedimientos ambulatorios
-            </li>
-            <li id="s" onclick="selectOpt('s', 'stay')">Estancia</li>
-            <li id="v" onclick="selectOpt('v', 'vigil')">Velación</li>
-          </ul>
-          <div id="data">
-            <div id="medical_attention">
-              <div
-                class="opt active"
+        <div>
+          <h1>Desde consultas generales, hasta cirugías de emergencia.</h1>
+          <div class="wrapper">
+            <ul id="opts">
+              <li
+                id="ma"
                 onclick="selectOpt('ma', 'medical_attention')"
+                class="active"
               >
                 Atención de emergencia
-              </div>
-              <div class="shown">
-                <h1>EMERGENCIAS 24/7</h1>
-                <p>(664) 200 24 51 | (664) 200 24 61</p>
-                <h2>Estamos para ayudarte</h2>
-                <p>Atención inmediata 24/7 a pacientes en estado crítico.</p>
-                <div class="div_img">
-                  <img
-                    src="../assets/imgs/serv_emergencia.png"
-                    alt="Servicio de emergencia"
-                  />
-                </div>
-              </div>
-            </div>
-            <div id="general_medicine">
-              <div
-                class="opt inactive"
-                onclick="selectOpt('gm', 'general_medicine')"
-              >
+              </li>
+              <li id="gm" onclick="selectOpt('gm', 'general_medicine')">
                 Medicina general
-              </div>
-              <div class="hiden">
-                <ul>
-                  <li>
-                    <span>Consultas</span>
-                  </li>
-                  <li>
-                    <span>Tratamientos médicos</span>
-                  </li>
-                  <li>
-                    <span>
-                      Estudios de gabinete (radiografías, ultrasonido,
-                      electrocardiograma, ecocardiograma)
-                    </span>
-                  </li>
-                  <li>
-                    <span>Ultrasonido (paneo y estudio ultrasonográfico)</span>
-                  </li>
-                </ul>
-                <div class="div_img">
-                  <img
-                    src="../assets/imgs/medicinagral-rayosx.jpg"
-                    alt="Medicina general"
-                  />
-                </div>
-              </div>
-            </div>
-            <div id="preventive_medicine">
-              <div
-                class="opt inactive"
-                onclick="selectOpt('pm', 'preventive_medicine')"
-              >
+              </li>
+              <li id="pm" onclick="selectOpt('pm', 'preventive_medicine')">
                 Medicina preventiva
-              </div>
-              <div class="hiden">
-                <div class="ul_cols">
-                  <ul>
-                    <li>
-                      <span>Desparasitación general</span>
-                    </li>
-                    <li>
-                      <span>Vacunas múltiples caninas</span>
-                    </li>
-                    <li>
-                      <span>Vacuna giardia</span>
-                    </li>
-                    <li>
-                      <span>Vacuna bordetella</span>
-                    </li>
-                    <li>
-                      <span>Vacuna leucemia</span>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>
-                      <span>Vacuna de rabia general</span>
-                    </li>
-                    <li>
-                      <span>Vacuna triple viral felina</span>
-                    </li>
-                    <li>
-                      <span>Vacunas anuales perro</span>
-                    </li>
-                    <li>
-                      <span>Vacunas anuales gato</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="div_img">
-                  <img src="../assets/imgs/vacunas.jpg" alt="Vacunas" />
-                </div>
-              </div>
-            </div>
-            <div id="issuance_certificates">
-              <div
-                class="opt inactive"
-                onclick="selectOpt('ic', 'issuance_certificates')"
-              >
+              </li>
+              <li id="ic" onclick="selectOpt('ic', 'issuance_certificates')">
                 Expedición de certificados
-              </div>
-              <div class="hiden">
-                <ul>
-                  <li>
-                    <span>Certificado de salud</span>
-                  </li>
-                  <li>
-                    <span>Certificado de vacunación</span>
-                  </li>
-                  <li>
-                    <span>Certificado de desparasitación</span>
-                  </li>
-                </ul>
-                <div class="div_img">
-                  <img
-                    src="../assets/imgs/serv_expedicion-certificados.png"
-                    alt="Expedición de certificados"
-                  />
-                </div>
-              </div>
-            </div>
-            <div id="hospital">
-              <div class="opt inactive" onclick="selectOpt('h', 'hospital')">
-                Hospital
-              </div>
-              <div class="hiden">
-                <div class="ul_cols">
-                  <ul>
-                    <li>
-                      <span>Curaciones</span>
-                    </li>
-                    <li>
-                      <span>Hospitalización</span>
-                    </li>
-                    <li>
-                      <span>Observación Médica</span>
-                    </li>
-                    <li>
-                      <span>Transfusión sanguínea</span>
-                    </li>
-                    <li>
-                      <span>Cirugías Ortopédicas</span>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>
-                      <span>Cirugías de tejidos blandos</span>
-                    </li>
-                    <li>
-                      <span>Cirugía general</span>
-                    </li>
-                    <li>
-                      <span>Esterilización</span>
-                    </li>
-                    <li>
-                      <span>Castración</span>
-                    </li>
-                    <li>
-                      <span>Cesárea</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="div_img">
-                  <img src="../assets/imgs/img-hospital-1.png" alt="Hospital" />
-                </div>
-              </div>
-            </div>
-            <div id="outpatient_procedures">
-              <div
-                class="opt inactive"
-                onclick="selectOpt('op', 'outpatient_procedures')"
-              >
+              </li>
+              <li id="h" onclick="selectOpt('h', 'hospital')">Hospital</li>
+              <li id="op" onclick="selectOpt('op', 'outpatient_procedures')">
                 Procedimientos ambulatorios
-              </div>
-              <div class="hiden">
-                <ul>
-                  <li>
-                    <span>Limpieza ótica</span>
-                  </li>
-                  <li>
-                    <span>Limpieza dental</span>
-                  </li>
-                  <li>
-                    <span>Extracción dentales</span>
-                  </li>
-                  <li>
-                    <span>Estudios Radiográficos contrastado</span>
-                  </li>
-                </ul>
-                <div class="div_img">
-                  <img
-                    src="../assets/imgs/serv_Procedimientos-ambulatorios.png"
-                    alt="Procedimientos ambulatorios"
-                  />
+              </li>
+              <li id="s" onclick="selectOpt('s', 'stay')">Estancia</li>
+              <li id="v" onclick="selectOpt('v', 'vigil')">Velación</li>
+            </ul>
+            <div id="data">
+              <div id="medical_attention">
+                <div
+                  class="opt active"
+                  onclick="selectOpt('ma', 'medical_attention')"
+                >
+                  Atención de emergencia
+                </div>
+                <div class="cont shown">
+                  <h1>EMERGENCIAS 24/7</h1>
+                  <p>(664) 200 24 51 | (664) 200 24 61</p>
+                  <h2>Estamos para ayudarte</h2>
+                  <p>Atención inmediata 24/7 a pacientes en estado crítico.</p>
+                  <div class="div_img">
+                    <img
+                      src="../assets/imgs/serv_emergencia.png"
+                      alt="Servicio de emergencia"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div id="stay">
-              <div class="opt inactive" onclick="selectOpt('s', 'stay')">
-                Estancia
-              </div>
-              <div class="hiden">
-                <ul>
-                  <li>
-                    <span>Hospedaje</span>
-                  </li>
-                  <li>
-                    <span>Guarderia</span>
-                  </li>
-                </ul>
-                <div class="div_img">
-                  <img src="../assets/imgs/img-estancia-1.png" alt="Estancia" />
+              <div id="general_medicine">
+                <div
+                  class="opt inactive"
+                  onclick="selectOpt('gm', 'general_medicine')"
+                >
+                  Medicina general
+                </div>
+                <div class="cont hiden">
+                  <ul>
+                    <li>
+                      <span>Consultas</span>
+                    </li>
+                    <li>
+                      <span>Tratamientos médicos</span>
+                    </li>
+                    <li>
+                      <span>
+                        Estudios de gabinete (radiografías, ultrasonido,
+                        electrocardiograma, ecocardiograma)
+                      </span>
+                    </li>
+                    <li>
+                      <span
+                        >Ultrasonido (paneo y estudio ultrasonográfico)</span
+                      >
+                    </li>
+                  </ul>
+                  <div class="div_img">
+                    <img
+                      src="../assets/imgs/medicinagral-rayosx.jpg"
+                      alt="Medicina general"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div id="vigil">
-              <div class="opt inactive" onclick="selectOpt('v', 'vigil')">
-                Velación
+              <div id="preventive_medicine">
+                <div
+                  class="opt inactive"
+                  onclick="selectOpt('pm', 'preventive_medicine')"
+                >
+                  Medicina preventiva
+                </div>
+                <div class="cont hiden">
+                  <div class="ul_cols">
+                    <ul>
+                      <li>
+                        <span>Desparasitación general</span>
+                      </li>
+                      <li>
+                        <span>Vacunas múltiples caninas</span>
+                      </li>
+                      <li>
+                        <span>Vacuna giardia</span>
+                      </li>
+                      <li>
+                        <span>Vacuna bordetella</span>
+                      </li>
+                      <li>
+                        <span>Vacuna leucemia</span>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <span>Vacuna de rabia general</span>
+                      </li>
+                      <li>
+                        <span>Vacuna triple viral felina</span>
+                      </li>
+                      <li>
+                        <span>Vacunas anuales perro</span>
+                      </li>
+                      <li>
+                        <span>Vacunas anuales gato</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="div_img">
+                    <img src="../assets/imgs/vacunas.jpg" alt="Vacunas" />
+                  </div>
+                </div>
               </div>
-              <div class="hiden">
-                <ul>
-                  <li>
-                    <span>Cremación con recuperación</span>
-                  </li>
-                  <li>
-                    <span>Cremación sin recuperación</span>
-                  </li>
-                </ul>
-                <div class="div_img">
-                  <img src="../assets/imgs/serv_Velacion.png" alt="Velación" />
+              <div id="issuance_certificates">
+                <div
+                  class="opt inactive"
+                  onclick="selectOpt('ic', 'issuance_certificates')"
+                >
+                  Expedición de certificados
+                </div>
+                <div class="cont hiden">
+                  <ul>
+                    <li>
+                      <span>Certificado de salud</span>
+                    </li>
+                    <li>
+                      <span>Certificado de vacunación</span>
+                    </li>
+                    <li>
+                      <span>Certificado de desparasitación</span>
+                    </li>
+                  </ul>
+                  <div class="div_img">
+                    <img
+                      src="../assets/imgs/serv_expedicion-certificados.png"
+                      alt="Expedición de certificados"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div id="hospital">
+                <div class="opt inactive" onclick="selectOpt('h', 'hospital')">
+                  Hospital
+                </div>
+                <div class="cont hiden">
+                  <div class="ul_cols">
+                    <ul>
+                      <li>
+                        <span>Curaciones</span>
+                      </li>
+                      <li>
+                        <span>Hospitalización</span>
+                      </li>
+                      <li>
+                        <span>Observación Médica</span>
+                      </li>
+                      <li>
+                        <span>Transfusión sanguínea</span>
+                      </li>
+                      <li>
+                        <span>Cirugías Ortopédicas</span>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <span>Cirugías de tejidos blandos</span>
+                      </li>
+                      <li>
+                        <span>Cirugía general</span>
+                      </li>
+                      <li>
+                        <span>Esterilización</span>
+                      </li>
+                      <li>
+                        <span>Castración</span>
+                      </li>
+                      <li>
+                        <span>Cesárea</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="div_img">
+                    <img
+                      src="../assets/imgs/img-hospital-1.png"
+                      alt="Hospital"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div id="outpatient_procedures">
+                <div
+                  class="opt inactive"
+                  onclick="selectOpt('op', 'outpatient_procedures')"
+                >
+                  Procedimientos ambulatorios
+                </div>
+                <div class="cont hiden">
+                  <ul>
+                    <li>
+                      <span>Limpieza ótica</span>
+                    </li>
+                    <li>
+                      <span>Limpieza dental</span>
+                    </li>
+                    <li>
+                      <span>Extracción dentales</span>
+                    </li>
+                    <li>
+                      <span>Estudios Radiográficos contrastado</span>
+                    </li>
+                  </ul>
+                  <div class="div_img">
+                    <img
+                      src="../assets/imgs/serv_Procedimientos-ambulatorios.png"
+                      alt="Procedimientos ambulatorios"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div id="stay">
+                <div class="opt inactive" onclick="selectOpt('s', 'stay')">
+                  Estancia
+                </div>
+                <div class="cont hiden">
+                  <ul>
+                    <li>
+                      <span>Hospedaje</span>
+                    </li>
+                    <li>
+                      <span>Guarderia</span>
+                    </li>
+                  </ul>
+                  <div class="div_img">
+                    <img
+                      src="../assets/imgs/img-estancia-1.png"
+                      alt="Estancia"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div id="vigil">
+                <div class="opt inactive" onclick="selectOpt('v', 'vigil')">
+                  Velación
+                </div>
+                <div class="cont hiden">
+                  <ul>
+                    <li>
+                      <span>Cremación con recuperación</span>
+                    </li>
+                    <li>
+                      <span>Cremación sin recuperación</span>
+                    </li>
+                  </ul>
+                  <div class="div_img">
+                    <img
+                      src="../assets/imgs/serv_Velacion.png"
+                      alt="Velación"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="div_img">
-          <img src="../assets/imgs/img-pancho-servicios.png" alt="Pancho" />
         </div>
       </section>
+      <div class="div_pancho">
+        <img src="../assets/imgs/img-pancho-servicios.png" alt="Pancho" />
+      </div>
       <section id="sect_beauty">
-        <div class="div_carrusel">
-          <div>
-            <img
-              src="../assets/imgs/slide_profaunabeauty-1.jpg"
-              alt="Estilista"
-            />
-            <img
-              src="../assets/imgs/slide_profaunabeauty-2.jpg"
-              alt="Bañador"
-            />
+        <div>
+          <div class="div_slider">
+            <div id="slider">
+              <img
+                src="../assets/imgs/slide_profaunabeauty-1.jpg"
+                alt="Estilista"
+              />
+              <img
+                src="../assets/imgs/slide_profaunabeauty-2.jpg"
+                alt="Bañador"
+              />
+            </div>
           </div>
-        </div>
-        <div class="cont">
-          <img
-            src="../assets/svg/logo-profaunabeauty.svg"
-            alt="Profauna beauty"
-          />
-          <p>
-            Contamos con un servicio completo de estética que siempre se realiza
-            por un experto, quien utiliza los mejores productos de belleza que
-            harán lucir a tu mascota espectacular. Independientemente de cuál
-            sea la raza o especie siempre le damos el tratamiento y atención
-            adecuado para que luzca radiante y saludable.
-          </p>
-          <ul>
-            <li>
-              <span>
-                Estética para perros, gatos y conejos de todos los tamaños
-              </span>
-            </li>
-            <li>
-              <span>
-                Baño para perros, gatos y algunas especies exóticas.
-              </span>
-            </li>
-            <li>
-              <span> Baño medicado </span>
-            </li>
-            <li>
-              <span>Corte de uñas</span>
-            </li>
-            <li>
-              <span>Limpieza de glándulas</span>
-            </li>
-          </ul>
+          <div class="cont">
+            <img
+              src="../assets/svg/logo-profaunabeauty.svg"
+              alt="Profauna beauty"
+            />
+            <p>
+              Contamos con un servicio completo de estética que siempre se
+              realiza por un experto, quien utiliza los mejores productos de
+              belleza que harán lucir a tu mascota espectacular.
+              Independientemente de cuál sea la raza o especie siempre le damos
+              el tratamiento y atención adecuado para que luzca radiante y
+              saludable.
+            </p>
+            <ul>
+              <li>
+                <span>
+                  Estética para perros, gatos y conejos de todos los tamaños
+                </span>
+              </li>
+              <li>
+                <span>Baño para perros, gatos y algunas especies exóticas</span>
+              </li>
+              <li>
+                <span>Baño medicado </span>
+              </li>
+              <li>
+                <span>Corte de uñas</span>
+              </li>
+              <li>
+                <span>Limpieza de glándulas</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section id="sect_lab">
