@@ -1,0 +1,257 @@
+#sect_top {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/imgs/top_adopt.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 50% 50% / 0 0 100px 100px;
+}
+
+#sect_top > div {
+  width: 1200px;
+}
+
+#sect_data {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+#sect_data > .cont {
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#sect_data > .cont > .div_data > .div_title > h1,
+#sect_data > .cont > .div_data > .div_title > h2 {
+  color: var(--yellow);
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 25pt;
+}
+
+#sect_data > .cont > .div_data > .div_cont {
+  margin-top: 15px;
+  color: var(--blue);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#sect_data > .cont > .div_img > img {
+  width: 500px;
+  border-radius: 15px;
+}
+
+#sect_adopt > .div_form {
+  display: flex;
+  justify-content: center;
+  background-color: var(--green);
+  background-image: url("../assets/imgs/bg_simbolo_verde.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#sect_adopt > .div_form > div {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+#sect_adopt > .div_form > div > .div_img {
+  position: relative;
+  text-align: center;
+}
+
+#sect_adopt > .div_form > div > .div_img > p {
+  position: absolute;
+  color: var(--blue);
+  font-size: 1.2rem;
+  font-weight: 900;
+  line-height: 2rem;
+  transform: translate(95px, 17px);
+}
+
+#sect_adopt > .div_form > div > .div_img > p > a {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+#sect_adopt > .div_form > div > .div_img,
+.form_personal_data {
+  width: 50%;
+}
+
+#sect_adopt > .div_title {
+  padding: 30px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--green);
+  color: #fff;
+}
+
+#sect_adopt > .div_form {
+  padding: 75px 0;
+  display: flex;
+}
+
+.form_personal_data {
+  display: grid;
+  gap: 15px 0;
+}
+
+.form_personal_data label {
+  color: var(--blue);
+  font-size: 1.3rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.form_personal_data input {
+  width: 100%;
+}
+
+.form_personal_data > .double,
+.form_personal_data > .triple {
+  display: flex;
+  gap: 0 10px;
+}
+
+.form_personal_data > .double > div {
+  width: 50%;
+}
+
+.form_personal_data > .div_button {
+  display: flex;
+  justify-content: end;
+}
+
+.form_personal_data > .div_button > button {
+  background-color: var(--yellow);
+}
+
+.form_personal_data > .div_button > button:hover {
+  background-color: var(--breen);
+}
+
+@media (max-width: 1300px) {
+  #sect_top > div,
+  #sect_data > .cont,
+  #sect_adopt > .div_form > div {
+    width: 1000px;
+  }
+
+  #sect_adopt > .div_form > div > .div_img > p {
+    transform: translate(45px, 17px);
+  }
+}
+
+@media (max-width: 1100px) {
+  #sect_top > div,
+  #sect_data > .cont,
+  #sect_adopt > .div_form > div {
+    width: 800px;
+  }
+
+  #sect_adopt > .div_form > div {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  #sect_adopt > .div_form > div > .div_img > p {
+    transform: translate(20px, 17px);
+  }
+
+  .form_personal_data {
+    width: 100%;
+  }
+
+  #sect_data > .cont {
+    flex-wrap: wrap;
+    gap: 25px 0;
+  }
+
+  #sect_data > .cont > .div_img > img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  #sect_top > div {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+  }
+
+  #sect_data > .cont,
+  #sect_adopt > .div_form > div {
+    width: 600px;
+  }
+}
+
+@media (max-width: 700px) {
+  #sect_data > .cont,
+  #sect_adopt > .div_form > div {
+    width: calc(100% - 50px);
+  }
+}
+
+@media (max-width: 600px) {
+  #sect_data > .cont {
+    width: 400px;
+  }
+
+  #sect_data > .cont > .div_img > img {
+    width: 350px;
+  }
+
+  .form_personal_data > .double,
+  .form_personal_data > .triple {
+    flex-wrap: wrap;
+    gap: 15px 10px;
+  }
+
+  .form_personal_data > .double > div,
+  .form_personal_data > .triple > div {
+    width: 100%;
+  }
+
+  #sect_adopt > .div_form > div > .div_img > p {
+    font-size: 1.1rem;
+    transform: translate(15px, 13px);
+  }
+
+  #sect_adopt > .div_form > div > .div_img > img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  #sect_top > div {
+    padding: 15px;
+    width: calc(100% - 30px);
+  }
+
+  #sect_top > div > img {
+    min-width: 250px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  #sect_data > .cont {
+    width: 350px;
+  }
+
+  #sect_adopt > .div_form > div > .div_img > p {
+    font-size: 1rem;
+    transform: translate(12px, 9px);
+  }
+
+  #sect_adopt > .div_form > div > .div_img > img {
+    width: 350px;
+  }
+}

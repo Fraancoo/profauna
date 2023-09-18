@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="../../styles/footer.css" />
     <link rel="stylesheet" href="../../styles/profauna-adopt.css" />
     <script type="text/javascript" src="../../js/header.js" defer></script>
+    <script
+      type="text/javascript"
+      src="../../js/profauna-adobt.js"
+      defer
+    ></script>
     <title>Adoptar - Profauna</title>
   </head>
   <body>
@@ -26,9 +31,7 @@
             <a href="./servicios.html" class="noselected">Servicios</a>
           </li>
           <li>
-            <a href="./profauna-adopt.html" class="selected">
-              Profauna Adopt
-            </a>
+            <a href="./profauna-adopt" class="selected"> Profauna Adopt </a>
           </li>
           <li>
             <a href="./lost-and-found.html" class="noselected">Lost & Found</a>
@@ -65,9 +68,7 @@
               <a href="./servicios.html" class="noselected">Servicios</a>
             </li>
             <li>
-              <a href="./profauna-adopt.html" class="selected">
-                Profauna Adopt
-              </a>
+              <a href="./profauna-adopt" class="selected"> Profauna Adopt </a>
             </li>
             <li>
               <a href="./lost-and-found.html" class="noselected"
@@ -150,27 +151,32 @@
           <div class="div_animals">
             <div class="div_animal">
               <img
+                onclick="goTo('saturno')"
                 src="../../assets/imgs/profauna-saturno-282x220.png"
                 alt="Foto de (animal)"
               />
-              <h3>Saturno</h3>
-              <button>MÁS INFORMACIÓN</button>
+              <h3 onclick="goTo('saturno')">Saturno</h3>
+              <button onclick="goTo('saturno')">MÁS INFORMACIÓN</button>
             </div>
             <div class="div_animal">
               <img
+                onclick="goTo('cuyos-en-adopcion')"
                 src="../../assets/imgs/Remy-y-Chapito-1-282x220.jpg"
                 alt="Foto de (animal)"
               />
-              <h3>Cuyos en adopción</h3>
-              <button>MÁS INFORMACIÓN</button>
+              <h3 onclick="goTo('cuyos-en-adopcion')">Cuyos en adopción</h3>
+              <button onclick="goTo('cuyos-en-adopcion')">
+                MÁS INFORMACIÓN
+              </button>
             </div>
             <div class="div_animal">
               <img
+                onclick="goTo('ruffles')"
                 src="../../assets/imgs/adoptar-ruffles-1.jpg"
                 alt="Foto de (animal)"
               />
-              <h3>Ruffles</h3>
-              <button>MÁS INFORMACIÓN</button>
+              <h3 onclick="goTo('ruffles')">Ruffles</h3>
+              <button onclick="goTo('ruffles')">MÁS INFORMACIÓN</button>
             </div>
           </div>
         </div>
