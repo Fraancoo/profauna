@@ -23,13 +23,22 @@
   width: 1200px;
   display: flex;
   justify-content: space-around;
+  gap: 15px;
+}
+
+#sect_data > .cont > .div_data > .div_title > h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+#sect_data > .cont > .div_data > .div_title > h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
 #sect_data > .cont > .div_data > .div_title > h1,
 #sect_data > .cont > .div_data > .div_title > h2 {
   color: var(--yellow);
-  font-size: 2rem;
-  font-weight: bold;
   line-height: 25pt;
 }
 
@@ -40,8 +49,15 @@
   font-weight: bold;
 }
 
+#sect_data > .cont > .div_data > .div_cont > h3 {
+  margin: 15px 0 7px;
+  color: var(--green);
+  font-weight: 900;
+}
+
 #sect_data > .cont > .div_img > img {
   width: 500px;
+  margin-bottom: 25px;
   border-radius: 15px;
 }
 

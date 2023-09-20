@@ -48,10 +48,6 @@ header {
   margin: 10px 0 25px 0;
 }
 
-#nav_landscape > .nav_list li a {
-  transition: 300ms;
-}
-
 #nav_landscape > .nav_list li > #btn_emergency {
   padding: 15px;
   color: #fff;
@@ -65,7 +61,8 @@ header {
   transition: 300ms;
 }
 
-#nav_landscape > .nav_list > li > a:hover {
+#nav_landscape > .nav_list > li > a:hover,
+#nav_landscape > .nav_list li > #btn_emergency:hover {
   color: var(--green);
 }
 
@@ -80,11 +77,12 @@ header {
 #nav_landscape .noselected,
 #nav_landscape .selected {
   text-shadow: 1px 1px 1px #454545;
+  transition: color 300ms;
 }
 
 #nav_landscape .noselected,
 #nav_portrait .noselected {
-  transition: 300ms;
+  transition: color 300ms;
 }
 
 #nav_portrait .selected {
