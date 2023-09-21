@@ -1,0 +1,115 @@
+#sect_form {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green);
+  background-image: url("../assets/imgs/bg_simbolo_verde.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#sect_form > div {
+  width: 1200px;
+  display: grid;
+  justify-items: center;
+  gap: 50px;
+}
+
+#sect_form > div > .div_title {
+  text-align: center;
+}
+
+#sect_form > div > .div_title > h1 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+#sect_form > div > .div_title > h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.form_personal_data {
+  width: 600px;
+  display: grid;
+  gap: 20px;
+}
+
+.form_personal_data > div {
+  display: grid;
+  gap: 10px;
+}
+
+.form_personal_data > .div_label > label,
+.form_personal_data > .div_file > label {
+  color: var(--blue);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.form_personal_data > .div_label > input {
+  width: 100%;
+}
+
+.form_personal_data > .div_btn {
+  justify-content: center;
+}
+
+.form_personal_data > .div_btn > button {
+  width: fit-content;
+  background-color: var(--yellow);
+}
+
+.form_personal_data > .div_btn > button:hover {
+  background-color: var(--breen);
+}
+
+#div_cv {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border: 2px dashed var(--yellow);
+}
+
+#div_cv.empty {
+  height: 100px;
+  width: 100%;
+  transition: background-color 300ms;
+  cursor: pointer;
+}
+
+#div_cv.empty:hover {
+  background-color: rgba(22, 96, 172, 0.3);
+}
+
+#div_cv.filled {
+  height: fit-content;
+  width: fit-content;
+}
+
+#div_cv > p {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  user-select: none;
+  font-style: italic;
+}
+
+.div_file_view {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.div_file_view > img {
+  height: 40px;
+}
+
+.div_file_view > span {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+}

@@ -1,5 +1,6 @@
 main {
   height: 100vh;
+  background-color: #eae9e7;
   background-image: url("../assets/imgs/bg_shop_construccion.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,7 +74,7 @@ main {
 #sect_warning .div_form .desc > span > a {
   color: var(--yellow);
   cursor: pointer;
-  transition: 300ms;
+  transition: color 300ms;
 }
 
 #sect_warning .div_form .desc > span > a:hover {

@@ -1,13 +1,14 @@
-#sect_profauna {
+#sect_top {
   height: 500px;
   padding: 50px;
   display: flex;
   align-items: center;
+  background-color: #3f61a0;
   background-image: url("../assets/imgs/top_nosotros.jpg");
   border-radius: 0 0 50% 50% / 0 0 100px 100px;
 }
 
-#sect_profauna > .div_img {
+#sect_top > .div_img {
   height: 200px;
   padding-right: 50px;
   border-right: 2px solid #fff;
@@ -15,18 +16,18 @@
   align-items: center;
 }
 
-#sect_profauna > .div_img > img {
+#sect_top > .div_img > img {
   width: 450px;
 }
 
-#sect_profauna > .cont {
+#sect_top > .cont {
   padding-left: 30px;
   color: #fff;
   font-size: 1.4rem;
   font-weight: bold;
 }
 
-#sect_profauna > .cont span {
+#sect_top > .cont span {
   color: var(--yellow);
 }
 
@@ -87,7 +88,7 @@
 
 .div_mision {
   width: 100%;
-  background-color: var(--indigo);
+  background-color: #365494;
   background-image: url("../assets/imgs/bg_mision.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -110,12 +111,14 @@
 }
 
 .div_vision {
+  background-color: #2bc5c6;
   background-image: url("../assets/imgs/bg_vision.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .div_valores {
+  background-color: #a22e11;
   background-image: url("../assets/imgs/bg_valores.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -128,17 +131,17 @@
 }
 
 @media (min-width: 901px) and (max-width: 1000px) {
-  #sect_profauna > .div_img > img {
+  #sect_top > .div_img > img {
     width: 350px;
   }
 }
 
 @media (max-width: 900px) {
-  #sect_profauna {
+  #sect_top {
     display: block;
   }
 
-  #sect_profauna > .div_img {
+  #sect_top > .div_img {
     padding: 0;
     border: none;
     justify-content: center;
@@ -153,19 +156,19 @@
 }
 
 @media (max-width: 650px) {
-  #sect_profauna > .div_img > img {
+  #sect_top > .div_img > img {
     width: 400px;
   }
 }
 
 @media (max-width: 600px) {
-  #sect_profauna {
+  #sect_top {
     height: fit-content;
   }
 }
 
 @media (max-width: 550px) {
-  #sect_profauna > .div_img > img {
+  #sect_top > .div_img > img {
     width: 350px;
   }
 
@@ -175,7 +178,7 @@
 }
 
 @media (max-width: 450px) {
-  #sect_profauna > .div_img > img {
+  #sect_top > .div_img > img {
     width: 300px;
   }
 

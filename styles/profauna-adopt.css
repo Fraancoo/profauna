@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #2f478d;
   background-image: url("../assets/imgs/top_adopt.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -94,7 +95,7 @@
   font-size: 1.4rem;
   text-transform: uppercase;
   cursor: pointer;
-  transition: 300ms;
+  transition: color 300ms;
 }
 
 #sect_adopt .div_animals .div_animal h3:hover {

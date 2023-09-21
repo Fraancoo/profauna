@@ -1,13 +1,13 @@
 const communicate = document.getElementById("communicate"),
-  sectAnimals = document.getElementById("sect_animals");
+  sectCall = document.getElementById("sect_call");
 
-sectAnimals.tabIndex = "-1";
+sectCall.tabIndex = "-1";
 
 communicate.addEventListener("click", () => {
   let navLandscape = document.getElementById("nav_landscape");
   console.log(navLandscape);
   navLandscape.className = "hide_nav_landscape";
-  sectAnimals.scrollIntoView({
+  sectCall.scrollIntoView({
     behavior: "smooth",
     inline: "start",
   });

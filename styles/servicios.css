@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #3877be;
   background-image: url("../assets/imgs/top_servicios.jpg");
   background-size: cover;
   border-radius: 0 0 50% 50% / 0 0 100px 100px;
@@ -56,7 +57,7 @@
   list-style: none;
   background-color: var(--light-blue);
   white-space: nowrap;
-  transition: 300ms;
+  transition: background-color 300ms, color 300ms;
   cursor: pointer;
 }
 
@@ -198,6 +199,7 @@
 #sect_lab {
   display: grid;
   justify-content: center;
+  background-color: #1e2120;
   background-image: url("../assets/imgs/bg_profaunalab-1.jpg");
   background-attachment: fixed;
   background-position: center;

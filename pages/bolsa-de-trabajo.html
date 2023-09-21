@@ -8,16 +8,21 @@
     <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
-    <link rel="stylesheet" href="../styles/profauna-adopt.css" />
+    <link rel="stylesheet" href="../styles/bolsa-de-trabajo.css" />
     <script type="text/javascript" src="../js/header.js" defer></script>
-    <title>Adoptar - Profauna</title>
+    <script
+      type="text/javascript"
+      src="../js/bolsa-de-trabajo.js"
+      defer
+    ></script>
+    <title>Profauna Hospital Veterinario en Tijuana</title>
   </head>
   <body>
     <header id="header">
       <nav id="nav_landscape">
         <ul class="nav_list">
           <li>
-            <a href="./index.html" class="noselected">Inicio</a>
+            <a href="./index.html" class="selected">Inicio</a>
           </li>
           <li>
             <a href="./nosotros.html" class="noselected">Nosotros</a>
@@ -26,9 +31,7 @@
             <a href="./servicios.html" class="noselected">Servicios</a>
           </li>
           <li>
-            <a href="./profauna-adopt" class="selected">
-              Profauna Adopt
-            </a>
+            <a href="./profauna-adopt" class="noselected"> Profauna Adopt </a>
           </li>
           <li>
             <a href="./lost-and-found.html" class="noselected">Lost & Found</a>
@@ -56,7 +59,7 @@
           <div class="back" onclick="handleHam(false)"></div>
           <ul id="nav_list">
             <li>
-              <a href="./index.html" class="noselected">Inicio</a>
+              <a href="./index.html" class="selected">Inicio</a>
             </li>
             <li>
               <a href="./nosotros.html" class="noselected">Nosotros</a>
@@ -65,9 +68,7 @@
               <a href="./servicios.html" class="noselected">Servicios</a>
             </li>
             <li>
-              <a href="./profauna-adopt" class="selected">
-                Profauna Adopt
-              </a>
+              <a href="./profauna-adopt" class="noselected"> Profauna Adopt </a>
             </li>
             <li>
               <a href="./lost-and-found.html" class="noselected"
@@ -96,86 +97,52 @@
       </div>
     </header>
     <main>
-      <section id="sect_top">
-        <div>
-          <img
-            src="../assets/svg/logo-profaunaadopt.svg"
-            alt="Profauna Adopt"
-          />
-        </div>
-      </section>
-      <section id="sect_info">
-        <div>
-          <div class="cont">
-            <div class="info">
-              <h1>Información:</h1>
-              <ul>
-                <li>Los adoptables se entregan desparasitados</li>
-                <li>En vacunas se aplicará un 20% de descuento.</li>
-                <li>
-                  Al entregarlos un médico o un auxiliar brindará apoyo sobre
-                  los cuidados del paciente e información sobre el estado actual
-                  del adoptable.
-                </li>
-              </ul>
-            </div>
-            <div class="requi">
-              <h1>Requisitos para adopción:</h1>
-              <ul>
-                <li>
-                  Fotos del espacio en donde el paciente estará (interiores y
-                  exteriores).
-                </li>
-                <li>Comprobante de domicilio.</li>
-                <li>ID.</li>
-                <li>Solicitud de adopción.</li>
-                <li>Entrevista previa.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="div_img">
-            <img
-              src="../assets/imgs/img-adopt-texto.png"
-              alt="Imagen de un perro"
-            />
-          </div>
-        </div>
-      </section>
-      <section id="sect_adopt">
+      <section id="sect_form">
         <div>
           <div class="div_title">
-            <h1>Quién sabe, tal vez, estamos con tu nuevo mejor amigo</h1>
-            <h2>¿Quieres conocerlo?</h2>
+            <h1>Bolsa de trabajo</h1>
+            <h2>¡únete a nuestro equipo!</h2>
           </div>
-          <div class="div_animals">
-            <div class="div_animal">
-              <img
-                src="../assets/imgs/profauna-saturno-282x220.png"
-                alt="Foto de (animal)"
-              />
-              <h3>Saturno</h3>
-              <button>MÁS INFORMACIÓN</button>
+          <form class="form_personal_data">
+            <div class="div_label">
+              <label>Nombre:</label>
+              <input type="text" />
             </div>
-            <div class="div_animal">
-              <img
-                src="../assets/imgs/Remy-y-Chapito-1-282x220.jpg"
-                alt="Foto de (animal)"
-              />
-              <h3>Cuyos en adopción</h3>
-              <button>MÁS INFORMACIÓN</button>
+            <div class="div_label">
+              <label>Teléfono:</label>
+              <input type="text" />
             </div>
-            <div class="div_animal">
-              <img
-                src="../assets/imgs/adoptar-ruffles-1.jpg"
-                alt="Foto de (animal)"
-              />
-              <h3>Ruffles</h3>
-              <button>MÁS INFORMACIÓN</button>
+            <div class="div_label">
+              <label>Correo electrónico:</label>
+              <input type="email" />
             </div>
-          </div>
+            <div class="div_label">
+              <label>Puesto que le interesa:</label>
+              <input type="text" />
+            </div>
+            <div class="div_file">
+              <label>Adjuntar CV (PDF, DOC, DOCX)</label>
+              <div id="div_cv" class="empty" onclick="selectFile()">
+                <p>Agregar archivo</p>
+                <div class="div_file_view" style="display: none">
+                  <img src="../assets/svg/RiFileWord2Line.svg" alt="Archivo" />
+                  <span id="file_name"></span>
+                </div>
+              </div>
+              <input
+                id="cv_input_file"
+                type="file"
+                accept=".pdf, .doc, .docx"
+                style="display: none"
+                onchange="uploadFile()"
+              />
+            </div>
+            <div class="div_btn">
+              <button type="submit">Enviar solicitud</button>
+            </div>
+          </form>
         </div>
       </section>
-      <div class="div_bottom"></div>
     </main>
     <footer>
       <div class="ft_top">
@@ -188,7 +155,7 @@
               <a href="nosotros.html">Nosotros</a>
             </li>
             <li>
-              <a href="index.html">Bolsa de trabajo</a>
+              <a href="bolsa-de-trabajo.html">Bolsa de trabajo</a>
             </li>
           </ul>
         </div>

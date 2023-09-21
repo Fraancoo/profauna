@@ -24,7 +24,7 @@ footer {
   font-size: 1.3rem;
   list-style: none;
   border-bottom: 2px solid transparent;
-  transition: 100ms;
+  transition: border 100ms;
 }
 
 .ft_top li:hover {
@@ -35,7 +35,7 @@ footer {
   height: 35px;
   padding-bottom: 5px;
   border-bottom: 2px solid transparent;
-  transition: 100ms;
+  transition: border 100ms;
 }
 
 .ft_top img:hover {
